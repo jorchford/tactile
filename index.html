@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tactile (妙触) - macOS 120Hz 全能多点触控与笔画手势增强引擎</title>
+  <meta name="description" content="Tactile (妙触) 为 macOS 带来媲美原生、丝滑顺畅的高级多指触控与手势增强体验。独创 120Hz ProMotion 单次触发防异响引擎，字符轨迹绘制识别，单指驻留滑动，妙控鼠标 Pro 全表面手势。">
+  <link rel="icon" type="image/png" href="images/AppIcon.png">
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card-bg: rgba(255, 255, 255, 0.04);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --card-hover: rgba(255, 255, 255, 0.08);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #3b82f6;
+      --accent-glow: rgba(59, 130, 246, 0.35);
+      --accent-grad: linear-gradient(135deg, #38bdf8 0%, #3b82f6 50%, #818cf8 100%);
+      --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text-main);
+      font-family: var(--font);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    a:hover {
+      color: #60a5fa;
+    }
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    /* Nav */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      background: rgba(11, 15, 25, 0.75);
+      border-bottom: 1px solid var(--card-border);
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      font-size: 20px;
+      color: #fff;
+    }
+    .brand img {
+      width: 36px;
+      height: 36px;
+      border-radius: 9px;
+      box-shadow: 0 4px 12px var(--accent-glow);
+    }
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+    .nav-links a {
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .nav-links a:hover {
+      color: #fff;
+    }
+    .btn-nav {
+      background: var(--accent-grad);
+      color: #fff !important;
+      padding: 8px 18px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      box-shadow: 0 4px 14px var(--accent-glow);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn-nav:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
+    }
+
+    /* Hero */
+    .hero {
+      padding: 90px 0 60px;
+      text-align: center;
+      position: relative;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: -150px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 700px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, rgba(139, 92, 246, 0.05) 50%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(59, 130, 246, 0.1);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      padding: 6px 16px;
+      border-radius: 999px;
+      font-size: 13px;
+      color: #93c5fd;
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-size: clamp(38px, 6vw, 64px);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      background: linear-gradient(180deg, #ffffff 0%, #cbd5e1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      font-size: clamp(17px, 2vw, 20px);
+      color: var(--text-muted);
+      max-width: 760px;
+      margin: 0 auto 36px;
+    }
+    .cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .btn-primary {
+      background: var(--accent-grad);
+      color: #fff;
+      padding: 14px 32px;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 16px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 10px 25px var(--accent-glow);
+      transition: all 0.2s;
+    }
+    .btn-primary:hover {
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(59, 130, 246, 0.55);
+    }
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--card-border);
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-weight: 500;
+      font-size: 16px;
+      transition: all 0.2s;
+    }
+    .btn-secondary:hover {
+      background: var(--card-hover);
+      color: #fff;
+    }
+    .version-meta {
+      font-size: 13px;
+      color: #64748b;
+    }
+
+    /* Video Demo */
+    .demo-wrapper {
+      margin: 40px auto 80px;
+      position: relative;
+      border-radius: 20px;
+      padding: 8px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.02) 100%);
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6), 0 0 40px rgba(59, 130, 246, 0.2);
+      max-width: 980px;
+    }
+    .demo-media {
+      width: 100%;
+      border-radius: 14px;
+      display: block;
+      background: #000;
+    }
+
+    /* Features Grid */
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .section-title h2 {
+      font-size: 34px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+    .section-title p {
+      color: var(--text-muted);
+      font-size: 16px;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 24px;
+      margin-bottom: 90px;
+    }
+    .feature-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 30px;
+      transition: all 0.25s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .feature-card:hover {
+      background: var(--card-hover);
+      border-color: rgba(59, 130, 246, 0.4);
+      transform: translateY(-4px);
+    }
+    .feature-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: rgba(59, 130, 246, 0.12);
+      color: #38bdf8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .feature-card h3 {
+      font-size: 19px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    .feature-card p {
+      color: var(--text-muted);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* Showcase Carousel */
+    .screenshots-section {
+      margin-bottom: 90px;
+    }
+    .screenshot-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .screenshot-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .screenshot-card:hover {
+      transform: scale(1.02);
+    }
+    .screenshot-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+    .screenshot-card .caption {
+      padding: 14px 16px;
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    /* Downloads Section */
+    .downloads-box {
+      background: linear-gradient(180deg, rgba(30, 41, 59, 0.5) 0%, rgba(15, 23, 42, 0.8) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 40px;
+      text-align: center;
+      margin-bottom: 90px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    }
+    .downloads-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .download-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 24px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.2s;
+    }
+    .download-card:hover {
+      border-color: var(--accent);
+      background: rgba(255, 255, 255, 0.06);
+    }
+    .download-card h4 {
+      font-size: 17px;
+      margin-bottom: 6px;
+      color: #fff;
+    }
+    .download-card p {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+    .btn-download {
+      background: rgba(59, 130, 246, 0.15);
+      border: 1px solid rgba(59, 130, 246, 0.4);
+      color: #93c5fd !important;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      text-align: center;
+      transition: all 0.2s;
+    }
+    .btn-download:hover {
+      background: var(--accent);
+      color: #fff !important;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--card-border);
+      padding: 40px 0;
+      text-align: center;
+      color: #64748b;
+      font-size: 13px;
+    }
+    .footer-links {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <img src="images/AppIcon.png" alt="Tactile">
+          <span>Tactile (妙触)</span>
+        </div>
+        <div class="nav-links">
+          <a href="#features">功能亮点</a>
+          <a href="#demo">演示</a>
+          <a href="#screenshots">界面</a>
+          <a href="#downloads">下载</a>
+          <a href="https://github.com/jorchford/tactile" target="_blank">GitHub</a>
+          <a href="https://redsite.cn/apps/tactile" class="btn-nav" target="_blank">获取 Pro</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-badge">
+        <span>🪄 Tactile v1.2.0 已正式发布</span>
+      </div>
+      <h1>重塑 macOS 触控板与妙控鼠标<br>极致丝滑的手势引擎</h1>
+      <p>
+        专为 Mac 专业用户打造。独创 120Hz ProMotion 零分配驱动级触控引擎，集成字符绘制识别、单指驻留滑动、Magic Mouse Pro 全表面手势与智能休眠极速省电。
+      </p>
+      <div class="cta-group">
+        <a href="#downloads" class="btn-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          免费下载体验
+        </a>
+        <a href="https://github.com/jorchford/tactile" class="btn-secondary" target="_blank">
+          GitHub 源码仓库
+        </a>
+      </div>
+      <div class="version-meta">
+        原生 Universal 2 架构 · 适配 M1–M4 Apple Silicon 及 Intel Mac · 支持 macOS 12+
+      </div>
+
+      <div class="demo-wrapper" id="demo">
+        <video class="demo-media" autoplay loop muted playsinline poster="images/01_preferences_overview.png">
+          <source src="videos/tactile_demo.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="container" id="features">
+      <div class="section-title">
+        <h2>卓越架构，带来前所未有的操控体验</h2>
+        <p>告别异响、粘滞与双管道跳页，纯 Swift 6 与底层 C 桥接打造的洁净室多点引擎</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">⚡️</div>
+          <h3>120Hz 零堆分配热路径</h3>
+          <p>栈上分配触控帧缓冲，微秒级注入 `kCGHIDEventTap`，内存常驻 < 20MB，彻底根治触控板频繁异响与连击跳页顽疾。</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">✍️</div>
+          <h3>字符绘制与直线度防误判</h3>
+          <p>划出 T、W、B、F、Q 或方向箭头即刻秒级触发，HUD 实时呈现整数置信度与最优动作，独创直线度过滤杜绝误判。</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🖱</div>
+          <h3>妙控鼠标 Pro 全表面手势</h3>
+          <p>中指固定食指轻点秒切标签，滑动关闭，三指向上调度中心，表面中央模拟原生中键点击，榨干 Magic Mouse 潜能。</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔋</div>
+          <h3>智能极速省电模式</h3>
+          <p>屏幕休眠瞬间自动挂起硬件监听，闲置零 CPU 消耗；设置窗口采用按需事件监听与 Metal GPU 加速，彻底杜绝耗电。</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎛</div>
+          <h3>场景模式与分应用绑定</h3>
+          <p>内置日常、办公、开发、影音 4 大预设，支持保存自定义场景快照。可为 Safari、Xcode、Chrome 定制独占映射。</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🪟</div>
+          <h3>原生窗口快捷平铺</h3>
+          <p>双指固定一指向左右滑动即可平铺半屏，向上全屏最大化，向下还原居中，无需安装任何额外窗口管理辅助工具。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="container screenshots-section" id="screenshots">
+      <div class="section-title">
+        <h2>精致优雅的 Liquid Glass 原生界面</h2>
+        <p>深度融入 macOS 毛玻璃视觉规范，极致直观的触控调节与多语言支持</p>
+      </div>
+
+      <div class="screenshot-gallery">
+        <div class="screenshot-card">
+          <img src="images/01_preferences_overview.png" alt="控制中心">
+          <div class="caption">首选项控制中心：一键掌控触控板与鼠标</div>
+        </div>
+        <div class="screenshot-card">
+          <img src="images/02_multitouch_desktop.png" alt="桌面交互">
+          <div class="caption">120Hz 极速响应：桌面调度与多任务管理</div>
+        </div>
+        <div class="screenshot-card">
+          <img src="images/03_live_hud_character.png" alt="字符绘制">
+          <div class="caption">字符绘制与实时候选 HUD 预测动作</div>
+        </div>
+        <div class="screenshot-card">
+          <img src="images/05_scene_presets.png" alt="场景预设">
+          <div class="caption">场景快照管理：办公、编程、娱乐秒切换</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Downloads -->
+    <section class="container" id="downloads">
+      <div class="downloads-box">
+        <h2>即刻下载 Tactile，开启全新触控体验</h2>
+        <p style="color: var(--text-muted); margin-top: 8px;">
+          所有基础手势与字符绘制永久免费，下载解压即可运行
+        </p>
+
+        <div class="downloads-cards">
+          <div class="download-card">
+            <div>
+              <h4>Tactile-Universal.zip</h4>
+              <p>通用双架构二进制安装包，推荐所有 Mac 用户下载使用。</p>
+            </div>
+            <a href="downloads/Tactile-Universal.zip" class="btn-download">下载通用版 (3.0 MB)</a>
+          </div>
+
+          <div class="download-card">
+            <div>
+              <h4>Tactile-AppleSilicon.zip</h4>
+              <p>原生 arm64 架构优化包，适配 M1/M2/M3/M4 全系 Mac。</p>
+            </div>
+            <a href="downloads/Tactile-AppleSilicon.zip" class="btn-download">下载 M 系列版 (1.8 MB)</a>
+          </div>
+
+          <div class="download-card">
+            <div>
+              <h4>Tactile-Intel.zip</h4>
+              <p>原生 x86_64 架构优化包，适配 Intel 芯片 MacBook 及 iMac。</p>
+            </div>
+            <a href="downloads/Tactile-Intel.zip" class="btn-download">下载 Intel 版 (1.9 MB)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="https://github.com/jorchford/tactile" target="_blank">GitHub 仓库</a>
+        <a href="https://redsite.cn/apps/tactile" target="_blank">官方网站</a>
+        <a href="README_zh.md">中文使用文档</a>
+        <a href="README.md">English Docs</a>
+      </div>
+      <p>© 2026 Tactile Team. All rights reserved. Crafted with care for macOS users.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
