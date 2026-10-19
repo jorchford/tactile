@@ -44,7 +44,8 @@
 8. [Per-App Profiles (Pro)](#-per-app-profiles-pro)
 9. [Permissions & System Setup](#-permissions--system-setup)
 10. [Download & Installation](#-download--installation)
-11. [FAQ & Support](#-faq--support)
+11. [License & Distribution Notice](#-license--distribution-notice)
+12. [FAQ & Support](#-faq--support)
 
 ---
 
@@ -194,6 +195,15 @@ Precompiled and verified binaries are available on [GitHub Releases](https://git
 1. Download the appropriate zip file for your Mac.
 2. Unzip and drag `Tactile.app` to your `/Applications` folder.
 3. Launch Tactile and grant **Accessibility** permission when prompted.
+
+---
+
+## ⚖️ License & Distribution Notice
+
+- **Free to Use**: Core trackpad gestures, character stroke recognition, directional strokes, and live HUD predictions are permanently free for all Mac users.
+- **GitHub Repository Role**: This repository ([`jorchford/tactile`](https://github.com/jorchford/tactile)) is the official public release hub, documentation center, and issue tracker for Tactile.
+- **Proprietary Engine**: Tactile is proprietary software. The underlying 120Hz ProMotion touch engine and algorithms are developed under clean-room engineering standards. To protect commercial intellectual property, the Swift source code is not publicly hosted in this repository.
+- **Official Releases**: Pre-compiled and signed binaries are hosted via [GitHub Releases](https://github.com/jorchford/tactile/releases) and [Tactile Official Site](https://redsite.cn/apps/tactile).
 
 ---
 

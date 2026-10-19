@@ -44,7 +44,8 @@
 8. [分应用独立配置 (Per-App Profiles - Pro 专属)](#-分应用独立配置-per-app-profiles---pro-专属)
 9. [系统权限与运行状态 (Permissions & Health)](#-系统权限与运行状态)
 10. [下载与安装指引 (Download & Installation)](#-下载与安装指引-download--installation)
-11. [常见问题与支持 (FAQ & Support)](#-常见问题与支持-faq--support)
+11. [开源与软件授权说明 (License & Notice)](#-开源与软件授权说明-license--notice)
+12. [常见问题与支持 (FAQ & Support)](#-常见问题与支持-faq--support)
 
 ---
 
@@ -216,6 +217,20 @@
 1. 下载适合您 Mac 架构的压缩包并解压。
 2. 将 `Tactile.app` 拖入 `/Applications`（应用程序）文件夹。
 3. 首次启动时，根据系统提示授予 **辅助功能 (Accessibility)** 权限，即可即刻畅享 120Hz 极速多点触控体验！
+
+---
+
+## ⚖️ 开源与软件授权说明 (License & Notice)
+
+- **免费使用 (Free Edition)**：
+  - Tactile 的所有基础手势体验（包括触控板单指驻留轻点、双指滑动、全部 12 种字符轨迹绘制、方向笔画手势、HUD 实时候选动作预测等）**永久免费提供给所有 Mac 用户直接使用**。
+- **GitHub 仓库定位 (Distribution Hub)**：
+  - 本 GitHub 仓库（[`jorchford/tactile`](https://github.com/jorchford/tactile)）是 Tactile 的**官方公开版本发布、更新下载（GitHub Releases）、多语言使用文档、问题排查与 Issue 反馈交流中心**。
+- **专有独立产权 (Proprietary Engine)**：
+  - Tactile 核心 120Hz ProMotion 零分配驱动级触控引擎、直线度防误判算法及 Pro 专业版高级特性为独立研发的专有产权商业软件（遵循 Clean-Room 洁净室工程标准，不包含任何 GPL 开源传染代码）。
+  - 为保护核心算法与商业知识产权，底层 Swift/C 源码不对外公开，本公开仓库专注于提供官方安装包下载与用户支持。
+- **安全验证与签名**：
+  - 发布的全部通用二进制安装包均已集成 Apple Developer ID 官方签名，确保可在 macOS 12 Monterey 至 macOS 15 Sequoia 上安全稳定运行。
 
 ---
 
