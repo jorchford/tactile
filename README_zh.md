@@ -13,7 +13,7 @@
   <a href="https://developer.apple.com/macos/"><img src="https://img.shields.io/badge/macOS-12.0%2B%20(Monterey%20--%20Sequoia)-success" alt="macOS Version"></a>
   <a href="https://developer.apple.com/swift/"><img src="https://img.shields.io/badge/Swift-6.0-orange" alt="Swift 6"></a>
   <a href="https://github.com/jorchford/tactile/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-Proprietary-lightgrey" alt="License"></a>
-  <a href="https://redsite.cn/apps/tactile"><img src="https://img.shields.io/badge/Website-Tactile-blueviolet" alt="Website"></a>
+  <a href="https://app.needai.top/app/tactile"><img src="https://img.shields.io/badge/Website-Tactile-blueviolet" alt="Website"></a>
 </p>
 
 <p align="center">
@@ -205,7 +205,7 @@
 
 ## 📦 下载与安装指引 (Download & Installation)
 
-前往 [GitHub Releases](https://github.com/jorchford/tactile/releases) 或 [官网下载](https://redsite.cn/apps/tactile) 获取预编译发行包：
+前往 [GitHub Releases](https://github.com/jorchford/tactile/releases) 或 [官网下载](https://app.needai.top/app/tactile) 获取预编译发行包：
 
 | 架构 / 文件名 | 说明 | 适用机型 |
 | :--- | :--- | :--- |

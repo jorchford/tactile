@@ -13,7 +13,7 @@
   <a href="https://developer.apple.com/macos/"><img src="https://img.shields.io/badge/macOS-12.0%2B%20(Monterey%20--%20Sequoia)-success" alt="macOS Version"></a>
   <a href="https://developer.apple.com/swift/"><img src="https://img.shields.io/badge/Swift-6.0-orange" alt="Swift 6"></a>
   <a href="https://github.com/jorchford/tactile/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-Proprietary-lightgrey" alt="License"></a>
-  <a href="https://redsite.cn/apps/tactile"><img src="https://img.shields.io/badge/Website-Tactile-blueviolet" alt="Website"></a>
+  <a href="https://app.needai.top/app/tactile"><img src="https://img.shields.io/badge/Website-Tactile-blueviolet" alt="Website"></a>
 </p>
 
 <p align="center">
@@ -183,7 +183,7 @@
 
 ## 📦 Download & Installation
 
-Precompiled and verified binaries are available on [GitHub Releases](https://github.com/jorchford/tactile/releases) and [Tactile Official Site](https://redsite.cn/apps/tactile):
+Precompiled and verified binaries are available on [GitHub Releases](https://github.com/jorchford/tactile/releases) and [Tactile Official Site](https://app.needai.top/app/tactile):
 
 | Architecture / File | Format | Compatibility |
 | :--- | :--- | :--- |
@@ -203,7 +203,7 @@ Precompiled and verified binaries are available on [GitHub Releases](https://git
 - **Free to Use**: Core trackpad gestures, character stroke recognition, directional strokes, and live HUD predictions are permanently free for all Mac users.
 - **GitHub Repository Role**: This repository ([`jorchford/tactile`](https://github.com/jorchford/tactile)) is the official public release hub, documentation center, and issue tracker for Tactile.
 - **Proprietary Engine**: Tactile is proprietary software. The underlying 120Hz ProMotion touch engine and algorithms are developed under clean-room engineering standards. To protect commercial intellectual property, the Swift source code is not publicly hosted in this repository.
-- **Official Releases**: Pre-compiled and signed binaries are hosted via [GitHub Releases](https://github.com/jorchford/tactile/releases) and [Tactile Official Site](https://redsite.cn/apps/tactile).
+- **Official Releases**: Pre-compiled and signed binaries are hosted via [GitHub Releases](https://github.com/jorchford/tactile/releases) and [Tactile Official Site](https://app.needai.top/app/tactile).
 
 ---
 
