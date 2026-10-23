@@ -1,0 +1,29 @@
+{
+  "version": "0.1",
+  "build": 1,
+  "title": "Tactile 0.1 焕新发布",
+  "releaseDate": "2026-10-24",
+  "minOSVersion": "12.0",
+  "notes": {
+    "zh": "Tactile 0.1 正式发布：\n• 支持完整 33 项 120Hz 高精度触控板与妙控鼠标手势\n• 支持流光手势绘字轨迹识别\n• 国内用户默认通过 Gitee 极速镜像检查更新与下载，海外用户支持 GitHub 官方源\n• 关于界面全面展示 Gitee 与 GitHub 双镜像代码及发布仓链接\n• 针对 macOS 12 Monterey 至 macOS 15+ 深度适配，超低延迟零异响",
+    "en": "Tactile 0.1 Official Release:\n• Comprehensive 33 high-precision 120Hz trackpad & Magic Mouse gestures\n• Fluid character gesture recognition with glow trails\n• Dual-channel fast updates: Gitee default for mainland China, GitHub for global users\n• Dual repository & release links for Gitee & GitHub in About view\n• Optimized for macOS 12 Monterey through macOS 15+ with zero trackpad rattle"
+  },
+  "downloads": {
+    "gitee": {
+      "name": "Gitee 码云极速镜像 (国内用户)",
+      "universal": "https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-Universal.zip",
+      "arm64": "https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-AppleSilicon.zip",
+      "intel": "https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-Intel.zip",
+      "releasesUrl": "https://gitee.com/jorchford/tactile/releases",
+      "repoUrl": "https://gitee.com/jorchford/tactile"
+    },
+    "github": {
+      "name": "GitHub 官方分发 (海外用户)",
+      "universal": "https://github.com/jorchford/tactile/raw/master/downloads/Tactile-Universal.zip",
+      "arm64": "https://github.com/jorchford/tactile/raw/master/downloads/Tactile-AppleSilicon.zip",
+      "intel": "https://github.com/jorchford/tactile/raw/master/downloads/Tactile-Intel.zip",
+      "releasesUrl": "https://github.com/jorchford/tactile/releases",
+      "repoUrl": "https://github.com/jorchford/tactile"
+    }
+  }
+}
