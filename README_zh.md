@@ -44,8 +44,9 @@
 8. [分应用独立配置 (Per-App Profiles - Pro 专属)](#-分应用独立配置-per-app-profiles---pro-专属)
 9. [系统权限与运行状态 (Permissions & Health)](#-系统权限与运行状态)
 10. [下载与安装指引 (Download & Installation)](#-下载与安装指引-download--installation)
-11. [开源与软件授权说明 (License & Notice)](#-开源与软件授权说明-license--notice)
-12. [常见问题与支持 (FAQ & Support)](#-常见问题与支持-faq--support)
+11. [致敬与致谢 (Acknowledgments & Tribute)](#-致敬与致谢-acknowledgments--tribute)
+12. [开源与软件授权说明 (License & Notice)](#-开源与软件授权说明-license--notice)
+13. [常见问题与支持 (FAQ & Support)](#-常见问题与支持-faq--support)
 
 ---
 
@@ -217,6 +218,23 @@
 1. 下载适合您 Mac 架构的压缩包并解压。
 2. 将 `Tactile.app` 拖入 `/Applications`（应用程序）文件夹。
 3. 首次启动时，根据系统提示授予 **辅助功能 (Accessibility)** 权限，即可即刻畅享 120Hz 极速多点触控体验！
+
+---
+
+## 🤝 致敬与致谢 (Acknowledgments & Tribute)
+
+Tactile (妙触) 的诞生与手势交互灵感深受 macOS 平台上经典的传奇多点触控神器 **[Jitouch](https://www.jitouch.com/)** 的深刻启发。
+
+在此向 Jitouch 原项目及其创作者表达最诚挚的感谢与崇高敬意：
+- 🌐 **官方网站**：[https://www.jitouch.com/](https://www.jitouch.com/)
+- 💻 **开源仓库**：[sukolsak/jitouch](https://github.com/sukolsak/jitouch)
+
+### 现代化重构与技术声明
+伴随 macOS 系统架构从 Intel 到 Apple Silicon (M系列芯片) 的跃升，以及苹果在系统底层权限与安全架构方面的重大升级，经典 Jitouch 的系统偏好设置面板架构已无法直接在现代 macOS 上运行。为了让这套被全球 Mac 用户珍视的高效手势体系在现代硬件上重获新生：
+
+- **100% Swift 纯原生重写**：Tactile 采用现代 **Swift 6.0** 与原生 AppKit / SwiftUI 架构，**从零完全重写了全部功能与手势检测算法**，彻底移除了对过时 System Preferences 面板及老旧 Objective-C 代码的依赖。
+- **驱动级现代事件流水线**：直通现代驱动层 `kCGHIDEventTap` 实现微秒级响应与 120Hz ProMotion 触控硬件零堆分配处理，杜绝传统手势插件的粘滞与跳页。
+- **全面原生适配**：原生支持 Apple Silicon (M1/M2/M3/M4) 与 Intel 双架构，全面兼容 macOS Monterey (12.0) 至 macOS Sequoia (15.0+)，并新增了智能直线度过滤、字符流光笔触 HUD 与场景化预设等现代创新特性。
 
 ---
 

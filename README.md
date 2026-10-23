@@ -44,8 +44,9 @@
 8. [Per-App Profiles (Pro)](#-per-app-profiles-pro)
 9. [Permissions & System Setup](#-permissions--system-setup)
 10. [Download & Installation](#-download--installation)
-11. [License & Distribution Notice](#-license--distribution-notice)
-12. [FAQ & Support](#-faq--support)
+11. [Acknowledgments & Tribute](#-acknowledgments--tribute)
+12. [License & Distribution Notice](#-license--distribution-notice)
+13. [FAQ & Support](#-faq--support)
 
 ---
 
@@ -195,6 +196,23 @@ Precompiled and verified binaries are available on [GitHub Releases](https://git
 1. Download the appropriate zip file for your Mac.
 2. Unzip and drag `Tactile.app` to your `/Applications` folder.
 3. Launch Tactile and grant **Accessibility** permission when prompted.
+
+---
+
+## 🤝 Acknowledgments & Tribute
+
+Tactile was deeply inspired by **[Jitouch](https://www.jitouch.com/)**, the legendary and pioneering multitouch gesture utility for macOS that defined intuitive trackpad interactions for generations of Mac power users.
+
+We would like to express our deepest gratitude and tribute to the original creators of Jitouch:
+- 🌐 **Official Website**: [https://www.jitouch.com/](https://www.jitouch.com/)
+- 💻 **Open Source Repository**: [sukolsak/jitouch](https://github.com/sukolsak/jitouch)
+
+### Modern Rewrite & Technical Statement
+As macOS transitioned from Intel to Apple Silicon (M-series chips) and modernized its system security and permission architectures, the original Jitouch preference pane became deprecated and incompatible with modern macOS releases. To preserve and elevate these beloved interaction concepts for modern Mac hardware:
+
+- **100% Written from Scratch in Swift**: Tactile completely **rewrote all features and gesture recognition algorithms from the ground up in modern Swift 6.0**, eliminating legacy Objective-C code and outdated System Preference pane dependencies.
+- **Next-Gen Driver-Level Performance**: Directly interfaces with macOS driver-level `kCGHIDEventTap` for microsecond dispatch latency and zero-heap-allocation touch processing on 120Hz ProMotion displays.
+- **Apple Silicon Native & Modern macOS Support**: Fully built for Apple Silicon (M1/M2/M3/M4) and Intel architectures as a Universal 2 application, supporting macOS 12 Monterey through macOS 15 Sequoia with fluid HUD feedback, character drawing, and scene-based customization.
 
 ---
 
