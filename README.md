@@ -10,6 +10,7 @@
 
 <p align="center">
   <a href="https://github.com/jorchford/tactile/releases"><img src="https://img.shields.io/github/v/release/jorchford/tactile?color=blue&label=Release" alt="Release"></a>
+  <a href="https://gitee.com/jorchford/tactile"><img src="https://img.shields.io/badge/Gitee-Mirror-C71D23?logo=gitee&logoColor=white" alt="Gitee"></a>
   <a href="https://developer.apple.com/macos/"><img src="https://img.shields.io/badge/macOS-12.0%2B%20(Monterey%20--%20Sequoia)-success" alt="macOS Version"></a>
   <a href="https://developer.apple.com/swift/"><img src="https://img.shields.io/badge/Swift-6.0-orange" alt="Swift 6"></a>
   <a href="https://github.com/jorchford/tactile/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-Proprietary-lightgrey" alt="License"></a>
@@ -184,13 +185,15 @@
 
 ## 📦 Download & Installation
 
-Precompiled and verified binaries are available on [GitHub Releases](https://github.com/jorchford/tactile/releases) and [Tactile Official Site](https://app.needai.top/app/tactile):
+Precompiled and verified binaries are available across multiple channels including [Gitee Releases (CN High-Speed)](https://gitee.com/jorchford/tactile/releases), [GitHub Releases](https://github.com/jorchford/tactile/releases), and [Tactile Official Site](https://app.needai.top/app/tactile):
 
-| Architecture / File | Format | Compatibility |
-| :--- | :--- | :--- |
-| **Tactile-Universal.zip** | Universal 2 Binary (Recommended) | All Apple Silicon (M1-M4) & Intel Macs |
-| **Tactile-AppleSilicon.zip** | Native arm64 Build | MacBook Air/Pro, Mac mini, Mac Studio (M-Series) |
-| **Tactile-Intel.zip** | Native x86_64 Build | 2015–2020 Intel-based Macs |
+| Architecture / File | Format | Compatibility | Gitee Fast Mirror | Official Direct |
+| :--- | :--- | :--- | :--- | :--- |
+| **Tactile-Universal.zip** | Universal 2 Binary (Recommended) | All Apple Silicon (M1-M4) & Intel Macs | [⚡ Gitee Download](https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-Universal.zip) | [Direct (3.9 MB)](downloads/Tactile-Universal.zip) |
+| **Tactile-AppleSilicon.zip** | Native arm64 Build | MacBook Air/Pro, Mac mini, Mac Studio (M-Series) | [⚡ Gitee Download](https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-AppleSilicon.zip) | [Direct (2.4 MB)](downloads/Tactile-AppleSilicon.zip) |
+| **Tactile-Intel.zip** | Native x86_64 Build | 2015–2020 Intel-based Macs | [⚡ Gitee Download](https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-Intel.zip) | [Direct (2.5 MB)](downloads/Tactile-Intel.zip) |
+
+> 💡 **For users in Mainland China**: We strongly recommend using the **[Gitee Releases Portal](https://gitee.com/jorchford/tactile/releases)** or direct Gitee download links above for fast downloads without proxy.
 
 ### Setup Guide
 1. Download the appropriate zip file for your Mac.
@@ -219,9 +222,9 @@ As macOS transitioned from Intel to Apple Silicon (M-series chips) and modernize
 ## ⚖️ License & Distribution Notice
 
 - **Free to Use**: Core trackpad gestures, character stroke recognition, directional strokes, and live HUD predictions are permanently free for all Mac users.
-- **GitHub Repository Role**: This repository ([`jorchford/tactile`](https://github.com/jorchford/tactile)) is the official public release hub, documentation center, and issue tracker for Tactile.
+- **Repository Role & Mirrors**: This repository is dual-hosted on GitHub ([`jorchford/tactile`](https://github.com/jorchford/tactile)) and Gitee ([`jorchford/tactile`](https://gitee.com/jorchford/tactile)) as the official public release hub, documentation center, and issue tracker for Tactile.
 - **Proprietary Engine**: Tactile is proprietary software. The underlying 120Hz ProMotion touch engine and algorithms are developed under clean-room engineering standards. To protect commercial intellectual property, the Swift source code is not publicly hosted in this repository.
-- **Official Releases**: Pre-compiled and signed binaries are hosted via [GitHub Releases](https://github.com/jorchford/tactile/releases) and [Tactile Official Site](https://app.needai.top/app/tactile).
+- **Official Releases**: Pre-compiled and signed binaries are hosted via [Gitee Releases](https://gitee.com/jorchford/tactile/releases), [GitHub Releases](https://github.com/jorchford/tactile/releases), and [Tactile Official Site](https://app.needai.top/app/tactile).
 
 ---
 

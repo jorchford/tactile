@@ -358,6 +358,26 @@
       background: var(--accent);
       color: #fff !important;
     }
+    .download-btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .btn-download-gitee {
+      background: rgba(199, 29, 35, 0.15);
+      border: 1px solid rgba(199, 29, 35, 0.4);
+      color: #fca5a5 !important;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      text-align: center;
+      transition: all 0.2s;
+    }
+    .btn-download-gitee:hover {
+      background: #c71d23;
+      color: #fff !important;
+    }
 
     /* Footer */
     footer {
@@ -389,6 +409,7 @@
           <a href="#demo">演示</a>
           <a href="#screenshots">界面</a>
           <a href="#downloads">下载</a>
+          <a href="https://gitee.com/jorchford/tactile" target="_blank">Gitee</a>
           <a href="https://github.com/jorchford/tactile" target="_blank">GitHub</a>
           <a href="https://app.needai.top/app/tactile" class="btn-nav" target="_blank">获取 Pro</a>
         </div>
@@ -408,10 +429,14 @@
       <div class="cta-group">
         <a href="#downloads" class="btn-primary">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          免费使用
+          免费下载体验
+        </a>
+        <a href="https://gitee.com/jorchford/tactile/releases" class="btn-secondary" target="_blank" style="display:inline-flex;align-items:center;gap:6px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11.984 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.016 0zm6.09 5.333c.328 0 .593.266.592.593v1.482a.594.594 0 0 1-.593.592H9.77a.593.593 0 0 0-.593.593v1.777c0 .328.265.593.593.593h7.708c.328 0 .593.266.593.593v1.481a.593.593 0 0 1-.593.593H9.77a.593.593 0 0 0-.593.593v2.074c0 .328.265.593.593.593h8.3a.593.593 0 0 1 .593.593v1.481a.593.593 0 0 1-.593.593H8.585a1.778 1.778 0 0 1-1.778-1.778V7.111c0-.982.796-1.778 1.778-1.778h9.489z"/></svg>
+          Gitee 国内下载
         </a>
         <a href="https://github.com/jorchford/tactile/releases" class="btn-secondary" target="_blank">
-          GitHub 下载
+          GitHub Releases
         </a>
       </div>
       <div class="version-meta">
@@ -503,7 +528,7 @@
       <div class="downloads-box">
         <h2>即刻下载 Tactile，开启全新触控体验</h2>
         <p style="color: var(--text-muted); margin-top: 8px;">
-          所有基础手势与字符绘制永久免费，下载解压即可运行
+          所有基础手势与字符绘制永久免费，下载解压即可运行 · 提供官网直连与 Gitee / GitHub 镜像下载
         </p>
 
         <div class="downloads-cards">
@@ -512,7 +537,10 @@
               <h4>Tactile-Universal.zip</h4>
               <p>通用双架构二进制安装包，推荐所有 Mac 用户下载使用。</p>
             </div>
-            <a href="downloads/Tactile-Universal.zip" class="btn-download">下载通用版 (3.9 MB)</a>
+            <div class="download-btn-group">
+              <a href="downloads/Tactile-Universal.zip" class="btn-download">官网直链下载 (3.9 MB)</a>
+              <a href="https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-Universal.zip" target="_blank" class="btn-download-gitee">Gitee 国内高速下载</a>
+            </div>
           </div>
 
           <div class="download-card">
@@ -520,7 +548,10 @@
               <h4>Tactile-AppleSilicon.zip</h4>
               <p>原生 arm64 架构优化包，适配 M1/M2/M3/M4 全系 Mac。</p>
             </div>
-            <a href="downloads/Tactile-AppleSilicon.zip" class="btn-download">下载 M 系列版 (2.4 MB)</a>
+            <div class="download-btn-group">
+              <a href="downloads/Tactile-AppleSilicon.zip" class="btn-download">官网直链下载 (2.4 MB)</a>
+              <a href="https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-AppleSilicon.zip" target="_blank" class="btn-download-gitee">Gitee 国内高速下载</a>
+            </div>
           </div>
 
           <div class="download-card">
@@ -528,8 +559,20 @@
               <h4>Tactile-Intel.zip</h4>
               <p>原生 x86_64 架构优化包，适配 Intel 芯片 MacBook 及 iMac。</p>
             </div>
-            <a href="downloads/Tactile-Intel.zip" class="btn-download">下载 Intel 版 (2.5 MB)</a>
+            <div class="download-btn-group">
+              <a href="downloads/Tactile-Intel.zip" class="btn-download">官网直链下载 (2.5 MB)</a>
+              <a href="https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-Intel.zip" target="_blank" class="btn-download-gitee">Gitee 国内高速下载</a>
+            </div>
           </div>
+        </div>
+
+        <div style="margin-top: 24px; display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;">
+          <a href="https://gitee.com/jorchford/tactile/releases" target="_blank" class="btn-secondary" style="font-size: 13px;">
+            ⚡ Gitee 发行版 (国内免翻墙高速直达)
+          </a>
+          <a href="https://github.com/jorchford/tactile/releases" target="_blank" class="btn-secondary" style="font-size: 13px;">
+            🌐 GitHub Releases 发布中心
+          </a>
         </div>
       </div>
     </section>
@@ -538,7 +581,10 @@
   <footer>
     <div class="container">
       <div class="footer-links">
+        <a href="https://gitee.com/jorchford/tactile/releases" target="_blank">Gitee 国内下载</a>
         <a href="https://github.com/jorchford/tactile/releases" target="_blank">GitHub 下载</a>
+        <a href="https://gitee.com/jorchford/tactile" target="_blank">Gitee 镜像仓</a>
+        <a href="https://github.com/jorchford/tactile" target="_blank">GitHub 官方仓</a>
         <a href="https://app.needai.top/app/tactile" target="_blank">官方网站</a>
         <a href="README_zh.md">中文使用文档</a>
         <a href="README.md">English Docs</a>

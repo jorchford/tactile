@@ -10,6 +10,7 @@
 
 <p align="center">
   <a href="https://github.com/jorchford/tactile/releases"><img src="https://img.shields.io/github/v/release/jorchford/tactile?color=blue&label=Release" alt="Release"></a>
+  <a href="https://gitee.com/jorchford/tactile"><img src="https://img.shields.io/badge/Gitee-国内镜像-C71D23?logo=gitee&logoColor=white" alt="Gitee"></a>
   <a href="https://developer.apple.com/macos/"><img src="https://img.shields.io/badge/macOS-12.0%2B%20(Monterey%20--%20Sequoia)-success" alt="macOS Version"></a>
   <a href="https://developer.apple.com/swift/"><img src="https://img.shields.io/badge/Swift-6.0-orange" alt="Swift 6"></a>
   <a href="https://github.com/jorchford/tactile/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-Proprietary-lightgrey" alt="License"></a>
@@ -206,13 +207,17 @@
 
 ## 📦 下载与安装指引 (Download & Installation)
 
-前往 [GitHub Releases](https://github.com/jorchford/tactile/releases) 或 [官网下载](https://app.needai.top/app/tactile) 获取预编译发行包：
+Tactile 提供国内高速镜像与全球多渠道下载，推荐前往 **[Gitee 发行版 (国内高速推荐)](https://gitee.com/jorchford/tactile/releases)**、**[GitHub Releases](https://github.com/jorchford/tactile/releases)** 或 **[官网下载](https://app.needai.top/app/tactile)** 获取预编译发行包：
 
-| 架构 / 文件名 | 说明 | 适用机型 |
-| :--- | :--- | :--- |
-| **Tactile-Universal.zip** | 通用二进制格式 (推荐) | M1/M2/M3/M4 及 Intel Mac 全系列 |
-| **Tactile-AppleSilicon.zip** | Apple Silicon 原生优化包 | MacBook Air/Pro, Mac mini, Mac Studio (M系列) |
-| **Tactile-Intel.zip** | Intel x86_64 原生优化包 | 2015-2020 款 Intel 架构 Mac |
+### 📥 极速下载通道
+
+| 架构 / 文件名 | 说明 | 适用机型 | Gitee 高速直链 | 官网直链 |
+| :--- | :--- | :--- | :--- | :--- |
+| **Tactile-Universal.zip** | 通用二进制格式 (推荐) | M1/M2/M3/M4 及 Intel Mac 全系列 | [⚡ Gitee 高速下载](https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-Universal.zip) | [官网直链 (3.9 MB)](downloads/Tactile-Universal.zip) |
+| **Tactile-AppleSilicon.zip** | Apple Silicon 原生优化包 | MacBook Air/Pro, Mac mini, Mac Studio (M系列) | [⚡ Gitee 高速下载](https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-AppleSilicon.zip) | [官网直链 (2.4 MB)](downloads/Tactile-AppleSilicon.zip) |
+| **Tactile-Intel.zip** | Intel x86_64 原生优化包 | 2015-2020 款 Intel 架构 Mac | [⚡ Gitee 高速下载](https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-Intel.zip) | [官网直链 (2.5 MB)](downloads/Tactile-Intel.zip) |
+
+> 💡 **国内用户推荐**：国内网络环境下推荐使用 **[Gitee Releases 发布页](https://gitee.com/jorchford/tactile/releases)** 或直接点击上方 Gitee 高速直链下载，无需代理，极速完成。
 
 ### 安装步骤
 1. 下载适合您 Mac 架构的压缩包并解压。
@@ -242,8 +247,8 @@ Tactile (妙触) 的诞生与手势交互灵感深受 macOS 平台上经典的�
 
 - **免费使用 (Free Edition)**：
   - Tactile 的所有基础手势体验（包括触控板单指驻留轻点、双指滑动、全部 12 种字符轨迹绘制、方向笔画手势、HUD 实时候选动作预测等）**永久免费提供给所有 Mac 用户直接使用**。
-- **GitHub 仓库定位 (Distribution Hub)**：
-  - 本 GitHub 仓库（[`jorchford/tactile`](https://github.com/jorchford/tactile)）是 Tactile 的**官方公开版本发布、更新下载（GitHub Releases）、多语言使用文档、问题排查与 Issue 反馈交流中心**。
+- **多平台官方仓库与分发中心 (Distribution Hub)**：
+  - 本项目同时在 Gitee（[`jorchford/tactile`](https://gitee.com/jorchford/tactile)）与 GitHub（[`jorchford/tactile`](https://github.com/jorchford/tactile)）双平台同步维护，作为官方公开版本发布、更新下载（Gitee / GitHub Releases）、多语言使用文档、问题排查与用户交流中心。
 - **专有独立产权 (Proprietary Engine)**：
   - Tactile 核心 120Hz ProMotion 零分配驱动级触控引擎、直线度防误判算法及 Pro 专业版高级特性为独立研发的专有产权商业软件（遵循 Clean-Room 洁净室工程标准，不包含任何 GPL 开源传染代码）。
   - 为保护核心算法与商业知识产权，底层 Swift/C 源码不对外公开，本公开仓库专注于提供官方安装包下载与用户支持。
