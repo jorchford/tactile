@@ -528,8 +528,22 @@
       <div class="downloads-box">
         <h2>即刻下载 Tactile，开启全新触控体验</h2>
         <p style="color: var(--text-muted); margin-top: 8px;">
-          所有基础手势与字符绘制永久免费，下载解压即可运行 · 提供官网直连与 Gitee / GitHub 镜像下载
+          所有基础手势与字符绘制永久免费，下载解压即可运行 · 提供 Homebrew 一键安装与官网 / 镜像直链
         </p>
+
+        <!-- Homebrew Cask Box -->
+        <div style="margin: 28px auto 8px auto; max-width: 680px; background: rgba(0, 0, 0, 0.45); border: 1px solid rgba(251, 191, 36, 0.35); border-radius: 12px; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; box-shadow: 0 10px 30px rgba(0,0,0,0.35);">
+          <div style="display: flex; align-items: center; gap: 12px; overflow: hidden;">
+            <span style="font-size: 22px;">🍺</span>
+            <div>
+              <div style="font-size: 12px; color: #fbbf24; font-weight: 600; margin-bottom: 2px;">Homebrew Cask 极速安装 (推荐)</div>
+              <code style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 13px; color: #f1f5f9; word-break: break-all;">brew install --cask jorchford/tactile/tactile</code>
+            </div>
+          </div>
+          <button onclick="navigator.clipboard.writeText('brew install --cask jorchford/tactile/tactile').then(() => { this.innerText = '已复制!'; setTimeout(() => this.innerText = '复制命令', 2000); })" style="padding: 7px 14px; background: rgba(251, 191, 36, 0.15); border: 1px solid #fbbf24; border-radius: 8px; color: #fbbf24; font-size: 12px; font-weight: 600; cursor: pointer; white-space: nowrap; transition: all 0.2s;">
+            复制命令
+          </button>
+        </div>
 
         <div class="downloads-cards">
           <div class="download-card">
