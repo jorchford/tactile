@@ -207,9 +207,30 @@
 
 ## 📦 下载与安装指引 (Download & Installation)
 
-Tactile 提供国内高速镜像与全球多渠道下载，推荐前往 **[Gitee 发行版 (国内高速推荐)](https://gitee.com/jorchford/tactile/releases)**、**[GitHub Releases](https://github.com/jorchford/tactile/releases)** 或 **[官网下载](https://app.needai.top/app/tactile)** 获取预编译发行包：
+### 🍺 方式一：Homebrew 一键安装 (推荐)
 
-### 📥 极速下载通道
+终端执行以下单条命令即可完成全自动安装：
+
+```bash
+brew install --cask jorchford/tactile/tactile
+```
+
+或者先添加 Tap 再安装：
+
+```bash
+brew tap jorchford/tactile
+brew install --cask tactile
+```
+
+> **更新与卸载**：
+> - 更新：`brew upgrade --cask tactile`
+> - 卸载：`brew uninstall --cask tactile`
+
+---
+
+### 📥 方式二：极速下载通道 (手动安装)
+
+Tactile 提供国内高速镜像与全球多渠道下载，推荐前往 **[Gitee 发行版 (国内高速推荐)](https://gitee.com/jorchford/tactile/releases)**、**[GitHub Releases](https://github.com/jorchford/tactile/releases)** 或 **[官网下载](https://app.needai.top/app/tactile)** 获取预编译发行包：
 
 | 架构 / 文件名 | 说明 | 适用机型 | Gitee 高速直链 | 官网直链 |
 | :--- | :--- | :--- | :--- | :--- |

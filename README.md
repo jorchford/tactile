@@ -185,6 +185,29 @@
 
 ## 📦 Download & Installation
 
+### 🍺 Option 1: Homebrew (Recommended)
+
+Install Tactile seamlessly via Homebrew Cask with a single command:
+
+```bash
+brew install --cask jorchford/tactile/tactile
+```
+
+Or tap the repository first:
+
+```bash
+brew tap jorchford/tactile
+brew install --cask tactile
+```
+
+> **Update & Uninstall**:
+> - Upgrade: `brew upgrade --cask tactile`
+> - Uninstall: `brew uninstall --cask tactile`
+
+---
+
+### 📥 Option 2: Precompiled Binaries (Manual)
+
 Precompiled and verified binaries are available across multiple channels including [Gitee Releases (CN High-Speed)](https://gitee.com/jorchford/tactile/releases), [GitHub Releases](https://github.com/jorchford/tactile/releases), and [Tactile Official Site](https://app.needai.top/app/tactile):
 
 | Architecture / File | Format | Compatibility | Gitee Fast Mirror | Official Direct |
