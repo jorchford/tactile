@@ -230,15 +230,18 @@ brew install --cask tactile
 
 ### 📥 方式二：极速下载通道 (手动安装)
 
-Tactile 提供国内高速镜像与全球多渠道下载，推荐前往 **[Gitee 发行版 (国内高速推荐)](https://gitee.com/jorchford/tactile/releases)**、**[GitHub Releases](https://github.com/jorchford/tactile/releases)** 或 **[官网下载](https://app.needai.top/app/tactile)** 获取预编译发行包：
+Tactile 提供国内高速镜像与全球多渠道下载，推荐前往 **[Gitee 发行标签 (国内高速推荐)](https://gitee.com/jorchford/tactile/tree/v0.21)**、**[GitHub Releases](https://github.com/jorchford/tactile/releases)** 或 **[官网下载](https://app.needai.top/app/tactile)** 获取预编译发行包：
 
-| 架构 / 文件名 | 说明 | 适用机型 | Gitee 高速直链 | 官网直链 |
+| 架构 / 文件名 | 说明 | 适用机型 | Gitee 高速直链 | GitHub / 官网直链 |
 | :--- | :--- | :--- | :--- | :--- |
-| **Tactile-Universal.zip** | 通用二进制格式 (推荐) | M1/M2/M3/M4 及 Intel Mac 全系列 | [⚡ Gitee 高速下载](https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-Universal.zip) | [官网直链 (6.5 MB)](downloads/Tactile-Universal.zip) |
-| **Tactile-AppleSilicon.zip** | Apple Silicon 原生优化包 | MacBook Air/Pro, Mac mini, Mac Studio (M系列) | [⚡ Gitee 高速下载](https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-AppleSilicon.zip) | [官网直链 (3.6 MB)](downloads/Tactile-AppleSilicon.zip) |
-| **Tactile-Intel.zip** | Intel x86_64 原生优化包 | 2015-2020 款 Intel 架构 Mac | [⚡ Gitee 高速下载](https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-Intel.zip) | [官网直链 (3.8 MB)](downloads/Tactile-Intel.zip) |
+| **Tactile-v0.21-Universal.zip** | v0.21 独立归档包 (推荐) | M1/M2/M3/M4 及 Intel Mac 全系列 | [⚡ Gitee 高速下载](https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-v0.21-Universal.zip) | [GitHub 下载 (7.0 MB)](https://github.com/jorchford/tactile/releases/download/v0.21/Tactile-Universal.zip) |
+| **Tactile-v0.21-AppleSilicon.zip** | v0.21 Apple Silicon 专版 | MacBook Air/Pro, Mac mini, Mac Studio (M系列) | [⚡ Gitee 高速下载](https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-v0.21-AppleSilicon.zip) | [GitHub 下载 (3.8 MB)](https://github.com/jorchford/tactile/releases/download/v0.21/Tactile-AppleSilicon.zip) |
+| **Tactile-v0.21-Intel.zip** | v0.21 Intel x86_64 专版 | 2015-2020 款 Intel 架构 Mac | [⚡ Gitee 高速下载](https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-v0.21-Intel.zip) | [GitHub 下载 (4.0 MB)](https://github.com/jorchford/tactile/releases/download/v0.21/Tactile-Intel.zip) |
+| **Tactile-Universal.zip** | 最新稳定通用二进制 | M1/M2/M3/M4 及 Intel Mac 全系列 | [⚡ Gitee 高速下载](https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-Universal.zip) | [直链下载 (7.0 MB)](downloads/Tactile-Universal.zip) |
+| **Tactile-AppleSilicon.zip** | 最新 Apple Silicon 原生优化包 | MacBook Air/Pro, Mac mini, Mac Studio (M系列) | [⚡ Gitee 高速下载](https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-AppleSilicon.zip) | [直链下载 (3.8 MB)](downloads/Tactile-AppleSilicon.zip) |
+| **Tactile-Intel.zip** | 最新 Intel x86_64 原生优化包 | 2015-2020 款 Intel 架构 Mac | [⚡ Gitee 高速下载](https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-Intel.zip) | [直链下载 (4.0 MB)](downloads/Tactile-Intel.zip) |
 
-> 💡 **国内用户推荐**：国内网络环境下推荐使用 **[Gitee Releases 发布页](https://gitee.com/jorchford/tactile/releases)** 或直接点击上方 Gitee 高速直链下载，无需代理，极速完成。
+> 💡 **国内用户推荐**：国内网络环境下推荐使用 **[Gitee 下载目录](https://gitee.com/jorchford/tactile/tree/master/downloads)** 或直接点击上方 Gitee 高速直链下载，无需代理，极速完成。
 
 ### 安装步骤
 1. 下载适合您 Mac 架构的压缩包并解压。

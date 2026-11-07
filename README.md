@@ -208,15 +208,18 @@ brew install --cask tactile
 
 ### 📥 Option 2: Precompiled Binaries (Manual)
 
-Precompiled and verified binaries are available across multiple channels including [Gitee Releases (CN High-Speed)](https://gitee.com/jorchford/tactile/releases), [GitHub Releases](https://github.com/jorchford/tactile/releases), and [Tactile Official Site](https://app.needai.top/app/tactile):
+Precompiled and verified binaries are available across multiple channels including [Gitee Repository (CN High-Speed)](https://gitee.com/jorchford/tactile/tree/v0.21), [GitHub Releases](https://github.com/jorchford/tactile/releases), and [Tactile Official Site](https://app.needai.top/app/tactile):
 
-| Architecture / File | Format | Compatibility | Gitee Fast Mirror | Official Direct |
+| Architecture / File | Format | Compatibility | Gitee Fast Mirror | GitHub / Official Direct |
 | :--- | :--- | :--- | :--- | :--- |
-| **Tactile-Universal.zip** | Universal 2 Binary (Recommended) | All Apple Silicon (M1-M4) & Intel Macs | [⚡ Gitee Download](https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-Universal.zip) | [Direct (6.5 MB)](downloads/Tactile-Universal.zip) |
-| **Tactile-AppleSilicon.zip** | Native arm64 Build | MacBook Air/Pro, Mac mini, Mac Studio (M-Series) | [⚡ Gitee Download](https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-AppleSilicon.zip) | [Direct (3.6 MB)](downloads/Tactile-AppleSilicon.zip) |
-| **Tactile-Intel.zip** | Native x86_64 Build | 2015–2020 Intel-based Macs | [⚡ Gitee Download](https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-Intel.zip) | [Direct (3.8 MB)](downloads/Tactile-Intel.zip) |
+| **Tactile-v0.21-Universal.zip** | v0.21 Release Archive (Recommended) | All Apple Silicon (M1-M4) & Intel Macs | [⚡ Gitee Download](https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-v0.21-Universal.zip) | [GitHub Download (7.0 MB)](https://github.com/jorchford/tactile/releases/download/v0.21/Tactile-Universal.zip) |
+| **Tactile-v0.21-AppleSilicon.zip** | v0.21 Apple Silicon Archive | MacBook Air/Pro, Mac mini, Mac Studio (M-Series) | [⚡ Gitee Download](https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-v0.21-AppleSilicon.zip) | [GitHub Download (3.8 MB)](https://github.com/jorchford/tactile/releases/download/v0.21/Tactile-AppleSilicon.zip) |
+| **Tactile-v0.21-Intel.zip** | v0.21 Intel Archive | 2015–2020 Intel-based Macs | [⚡ Gitee Download](https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-v0.21-Intel.zip) | [GitHub Download (4.0 MB)](https://github.com/jorchford/tactile/releases/download/v0.21/Tactile-Intel.zip) |
+| **Tactile-Universal.zip** | Latest Universal 2 Binary | All Apple Silicon (M1-M4) & Intel Macs | [⚡ Gitee Download](https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-Universal.zip) | [Direct (7.0 MB)](downloads/Tactile-Universal.zip) |
+| **Tactile-AppleSilicon.zip** | Latest Native arm64 Build | MacBook Air/Pro, Mac mini, Mac Studio (M-Series) | [⚡ Gitee Download](https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-AppleSilicon.zip) | [Direct (3.8 MB)](downloads/Tactile-AppleSilicon.zip) |
+| **Tactile-Intel.zip** | Latest Native x86_64 Build | 2015–2020 Intel-based Macs | [⚡ Gitee Download](https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-Intel.zip) | [Direct (4.0 MB)](downloads/Tactile-Intel.zip) |
 
-> 💡 **For users in Mainland China**: We strongly recommend using the **[Gitee Releases Portal](https://gitee.com/jorchford/tactile/releases)** or direct Gitee download links above for fast downloads without proxy.
+> 💡 **For users in Mainland China**: We strongly recommend using the **[Gitee Downloads Portal](https://gitee.com/jorchford/tactile/tree/master/downloads)** or direct Gitee download links above for fast downloads without proxy.
 
 ### Setup Guide
 1. Download the appropriate zip file for your Mac.
