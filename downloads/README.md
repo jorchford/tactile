@@ -37,11 +37,11 @@
 如需对下载的文件进行完整性与防篡改验证，可在终端中执行 `shasum -a 256 <文件名>` 并核对以下哈希：
 
 ```text
-3550afe960c278300d25cced8f1a352aef808c27bbc9deb1e4bf2b29588374c1  Tactile-AppleSilicon.zip
-3550afe960c278300d25cced8f1a352aef808c27bbc9deb1e4bf2b29588374c1  Tactile-v0.21-AppleSilicon.zip
+57916832196c4dca0c324338f0b04185f102cf61743f82cc784b0bd39009f8e7  Tactile-AppleSilicon.zip
+57916832196c4dca0c324338f0b04185f102cf61743f82cc784b0bd39009f8e7  Tactile-v0.21-AppleSilicon.zip
 
-9b0e15faabe90d5a429ae2dac9e9e0d5cca24aaee1f2c2caa0f7389043a51470  Tactile-Intel.zip
-9b0e15faabe90d5a429ae2dac9e9e0d5cca24aaee1f2c2caa0f7389043a51470  Tactile-v0.21-Intel.zip
+3d427dbbcf3b03861c9e17ef4730c57ac84a5cf85f1c9ca27ad6d409568f9b91  Tactile-Intel.zip
+3d427dbbcf3b03861c9e17ef4730c57ac84a5cf85f1c9ca27ad6d409568f9b91  Tactile-v0.21-Intel.zip
 ```
 
 ---
