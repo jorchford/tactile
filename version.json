@@ -1,12 +1,12 @@
 {
-  "version": "0.1",
-  "build": 1,
-  "title": "Tactile 0.1 焕新发布",
-  "releaseDate": "2026-10-24",
-  "minOSVersion": "12.0",
+  "version": "0.21",
+  "build": 3,
+  "title": "Tactile 0.21 焕新发布",
+  "releaseDate": "2026-11-07",
+  "minOSVersion": "14.0",
   "notes": {
-    "zh": "Tactile 0.1 正式发布：\n• 支持完整 33 项 120Hz 高精度触控板与妙控鼠标手势\n• 支持流光手势绘字轨迹识别\n• 国内用户默认通过 Gitee 极速镜像检查更新与下载，海外用户支持 GitHub 官方源\n• 关于界面全面展示 Gitee 与 GitHub 双镜像代码及发布仓链接\n• 针对 macOS 12 Monterey 至 macOS 15+ 深度适配，超低延迟零异响",
-    "en": "Tactile 0.1 Official Release:\n• Comprehensive 33 high-precision 120Hz trackpad & Magic Mouse gestures\n• Fluid character gesture recognition with glow trails\n• Dual-channel fast updates: Gitee default for mainland China, GitHub for global users\n• Dual repository & release links for Gitee & GitHub in About view\n• Optimized for macOS 12 Monterey through macOS 15+ with zero trackpad rattle"
+    "zh": "Tactile 0.21 重点更新：\n• 置顶截图贴图全面支持按住鼠标左键任意区域随心拖拽移动位置，首点即响应无需预先激活\n• 置顶截图贴图全面支持自如缩放：双指捏合缩放、双指/滚轮平滑缩放、右下角鼠标拖拉缩放、键盘 ⌘+/⌘-/⌘0 缩放、右键快捷菜单比例调节及 ⎋ Esc / 双击快速关闭\n• 新增出厂极简预设场景，支持一键将当前配置保存为极简场景\n• 快捷键录制全局按键吞咽隔离，100% 屏蔽其他外部应用干扰\n• 智能快捷键冲突探测预警（Carbon 全局热键与 macOS 系统快捷键）\n• 修复窗口靠右半屏吸附图标显示反向问题\n• 过滤系统后台守护进程，彻底根除 pid 186 权限异常警告与拖拽监测 CPU 负载\n• 深度根除 Swift 协程定时器堆积内存泄漏，剪贴板超大图片转入高速磁盘缓存，空闲时自动瘦身\n• 优化多指轻扫（3指/4指）灵敏度与指尖抬起瞬时检测\n• 支持 5 指自然手型检测、掌心误触过滤与双指绘字间距自适应微调",
+    "en": "Tactile 0.21 Highlights:\n• Pinned screenshot stickers can be dragged anywhere by holding the left mouse button, with instant first-click response\n• Pinned screenshots fully support scaling: pinch-to-zoom, scroll wheel zoom, corner drag resizing, ⌘+/⌘-/⌘0 zoom, right-click presets, and Esc / double-click close\n• Added built-in minimalist preset scene with one-click current settings save\n• Global key-swallowing during shortcut recording, shielding all background apps\n• Smart shortcut conflict detection (Carbon hotkeys & macOS system keys)\n• Fixed right half window snap icon orientation\n• Filtered system daemon processes, eliminating pid 186 task port errors and drag monitoring CPU overhead\n• Fixed deep Swift Concurrency timer memory leak, offloaded clipboard images to disk cache\n• Enhanced 3-finger and 4-finger swipe responsiveness and lift-off flick detection\n• Natural 5-finger hand perception, palm rejection, and auto-tuning character drawing spacing"
   },
   "downloads": {
     "gitee": {
@@ -15,7 +15,7 @@
       "arm64": "https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-AppleSilicon.zip",
       "intel": "https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-Intel.zip",
       "releasesUrl": "https://gitee.com/jorchford/tactile/releases",
-      "repoUrl": "https://gitee.com/jorchford/tactile"
+      "repoUrl": "https://git ee.com/jorchford/tactile"
     },
     "github": {
       "name": "GitHub 官方分发 (海外用户)",
