@@ -37,14 +37,14 @@
 如需对下载的文件进行完整性与防篡改验证，可在终端中执行 `shasum -a 256 <文件名>` 并核对以下哈希：
 
 ```text
-7706276082dbdcfcfa1e33697b0ca63c26e5403bc882d4c16166b83c1c9127f2  Tactile-AppleSilicon.zip
-7706276082dbdcfcfa1e33697b0ca63c26e5403bc882d4c16166b83c1c9127f2  Tactile-v0.21-AppleSilicon.zip
+42a1503e2a63c82ba844623086721e80324a0a81e31b489f448e0ab9f97e576a  Tactile-AppleSilicon.zip
+42a1503e2a63c82ba844623086721e80324a0a81e31b489f448e0ab9f97e576a  Tactile-v0.21-AppleSilicon.zip
 
-2d0b084d63af2700392c0cfeff97c07afd5ad9886326cbb1be36c416bc38fcd5  Tactile-Intel.zip
-2d0b084d63af2700392c0cfeff97c07afd5ad9886326cbb1be36c416bc38fcd5  Tactile-v0.21-Intel.zip
+b8cf8718490fc7f93f40cced606ca0ece4822872cf7ca451c187c821a449e31d  Tactile-Intel.zip
+b8cf8718490fc7f93f40cced606ca0ece4822872cf7ca451c187c821a449e31d  Tactile-v0.21-Intel.zip
 
-a85535ecc1000b2a24b9ef84b0e19b677cf3755686d3bf3d578d86171049c4b9  Tactile-Universal.zip
-a85535ecc1000b2a24b9ef84b0e19b677cf3755686d3bf3d578d86171049c4b9  Tactile-v0.21-Universal.zip
+73fabda606b38fde054c5e896e728d64d8af64033f0a0e5c78d14425658845ea  Tactile-Universal.zip
+73fabda606b38fde054c5e896e728d64d8af64033f0a0e5c78d14425658845ea  Tactile-v0.21-Universal.zip
 ```
 
 ---
