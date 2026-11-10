@@ -5,7 +5,8 @@
 </p>
 
 <p align="center">
-  <strong>Next-Generation 120Hz ProMotion Multitouch Gesture Powerhouse & Stroke Drawing Engine for macOS</strong>
+  <strong>The Ultimate Mac Trackpad & Magic Mouse Gesture Powerhouse for macOS</strong><br>
+  <em>120Hz ProMotion Zero-Allocation Engine · Stroke & Character Drawing · Ultra-Low Memory (&lt;15MB) · BetterTouchTool & Jitouch Lightweight Alternative</em>
 </p>
 
 <p align="center">
@@ -20,6 +21,9 @@
 <p align="center">
   <strong>English Documentation</strong> | <a href="README_zh.md">中文使用手册</a>
 </p>
+
+> ⚡ **Transform your MacBook Trackpad, Magic Trackpad, and Magic Mouse into a productivity powerhouse.**  
+> Tactile is an ultra-low-memory (&lt;15MB), zero-idle-CPU multitouch gesture engine for macOS Sonoma, Sequoia, and Tahoe. Built in clean Swift 6 and driver-level C, it is the modern, blazing-fast alternative to **BetterTouchTool (BTT)** and **Jitouch**, featuring 120Hz ProMotion responsiveness, character stroke drawing, Jitouch-style one-fix sliding, Magic Mouse physical middle click, and native window snapping.
 
 ---
 

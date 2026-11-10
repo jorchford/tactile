@@ -5,7 +5,8 @@
 </p>
 
 <p align="center">
-  <strong>Ultra-Low Memory, 120Hz ProMotion Multitouch Gesture Powerhouse for macOS</strong>
+  <strong>Mac 触控板与妙控鼠标手势增强神器 · 120Hz ProMotion 极轻量手势工具</strong><br>
+  <em>BetterTouchTool (BTT) 与 Jitouch 极速轻量现代替代品 · 字符手势绘制 · 单指驻留 · 妙控鼠标中键 · 内存常驻 &lt;15MB · 0% 闲置耗电</em>
 </p>
 
 <p align="center">
@@ -20,6 +21,9 @@
 <p align="center">
   <a href="README.md">English Documentation</a> | <strong>中文使用手册</strong>
 </p>
+
+> 🪄 **彻底释放 MacBook 触控板 (Trackpad)、Magic Trackpad 与 Magic Mouse 妙控鼠标潜能。**  
+> 告别 BetterTouchTool 繁重的资源占用与发热卡顿，Tactile 采用现代纯 Swift 6 与底层驱动级 C 编写，常驻内存仅 **&lt; 15MB**，闲置 CPU **严格 0.0%**。拥有独创的 120Hz ProMotion 零堆分配触控引擎、双指字符轨迹识别（画 C 复制/画 V 粘贴/画 W 关标签页）、Jitouch 经典单指驻留滑动、Magic Mouse 物理中键点击与原生 AppKit 智能窗口吸附。兼容 macOS 14 Sonoma、macOS 15 Sequoia 及更高版本。
 
 ---
 
@@ -283,6 +287,12 @@ Tactile (妙触) 的诞生与手势交互灵感深受 macOS 平台上经典的�
 
 ## 💡 常见问题与支持 (FAQ & Support)
 
+- **Q: 相比 BetterTouchTool (BTT)，Tactile 有何核心优势？**  
+  A: BetterTouchTool 功能繁重但常驻内存高达 200MB~500MB，容易导致发热与电量消耗。Tactile 专为触控板与妙控鼠标手势打造，内存常驻严格 **&lt; 15MB**，闲置 CPU **0.0%**，并提供独创的 120Hz ProMotion 零延迟算法、字符笔画识别与原生 AppKit 窗口吸附，是现代 Mac 上最轻快的 BTT 替代品。
+- **Q: 支持哪些 Mac 触控板 (Trackpad) 与鼠标？**  
+  A: 原生支持全系 **MacBook Air / MacBook Pro 内置触控板**、**Apple Magic Trackpad 2 & 3 (妙控板)**、**Magic Mouse 1 & 2 (妙控鼠标)** 全表面手势，以及传统电竞/办公鼠标。
+- **Q: Magic Mouse 妙控鼠标如何触发中键点击 (Middle Click)？**  
+  A: 妙控鼠标轻巧优雅但原生缺乏中键滚轮。Tactile 独创双指轻点（Two-Finger Tap）模拟标准中键，在浏览器后台打开链接或在 3D/CAD 软件中平移画布极度顺手。
 - **Q: 为什么状态栏没有看到图标？**  
   A: 如果在设置中开启了「不在状态栏显示图标」，应用会以静默模式在后台常驻。随时在「启动台」或「应用程序」中再次双击打开 Tactile，即可呼出设置窗口。
 - **Q: 是否需要联网激活？**  
