@@ -6,7 +6,9 @@
 
 <p align="center">
   <strong>The Ultimate Mac Trackpad & Magic Mouse Gesture Powerhouse for macOS</strong><br>
-  <em>120Hz ProMotion Zero-Allocation Engine · Stroke & Character Drawing · Ultra-Low Memory (&lt;15MB) · BetterTouchTool & Jitouch Lightweight Alternative</em>
+  <strong>专为 Mac 触控板与妙控鼠标打造的 120Hz 极轻量手势增强神器</strong><br>
+  <em>120Hz ProMotion Zero-Allocation Engine · Stroke & Character Drawing · Ultra-Low Memory (&lt;15MB) · BetterTouchTool & Jitouch Lightweight Alternative</em><br>
+  <em>BetterTouchTool (BTT) 与 Jitouch 极速轻量现代替代品 · 字符手势绘制 · 单指驻留 · 妙控鼠标中键 · 0% 闲置耗电</em>
 </p>
 
 <p align="center">
@@ -39,19 +41,37 @@
 
 ## 📖 Table of Contents
 
-1. [Key Highlights & Performance](#-key-highlights--performance)
-2. [Complete Feature Matrix](#-complete-feature-matrix)
-3. [Trackpad Gestures In-Depth](#-trackpad-gestures-in-depth)
-4. [Character & Stroke Drawing](#-character--stroke-drawing)
-5. [Magic Mouse Pro Gestures](#-magic-mouse-pro-gestures)
-6. [Power Saving & CPU Optimization](#-power-saving--cpu-optimization)
-7. [Scene Presets (Pro)](#-scene-presets-pro)
-8. [Per-App Profiles (Pro)](#-per-app-profiles-pro)
-9. [Permissions & System Setup](#-permissions--system-setup)
-10. [Download & Installation](#-download--installation)
-11. [Acknowledgments & Tribute](#-acknowledgments--tribute)
-12. [License & Distribution Notice](#-license--distribution-notice)
-13. [FAQ & Support](#-faq--support)
+1. [🥊 Feature Comparison (Tactile vs BTT vs Jitouch)](#-feature-comparison-tactile-vs-bettertouchtool-vs-jitouch-vs-swish)
+2. [Key Highlights & Performance](#-key-highlights--performance)
+3. [Complete Feature Matrix](#-complete-feature-matrix)
+4. [Trackpad Gestures In-Depth](#-trackpad-gestures-in-depth)
+5. [Character & Stroke Drawing](#-character--stroke-drawing)
+6. [Magic Mouse Pro Gestures](#-magic-mouse-pro-gestures)
+7. [Power Saving & CPU Optimization](#-power-saving--cpu-optimization)
+8. [Scene Presets (Pro)](#-scene-presets-pro)
+9. [Per-App Profiles (Pro)](#-per-app-profiles-pro)
+10. [Permissions & System Setup](#-permissions--system-setup)
+11. [Download & Installation](#-download--installation)
+12. [Acknowledgments & Tribute](#-acknowledgments--tribute)
+13. [License & Distribution Notice](#-license--distribution-notice)
+14. [FAQ & Support](#-faq--support)
+
+---
+
+## 🥊 Feature Comparison: Tactile vs. BetterTouchTool vs. Jitouch vs. Swish
+
+| Feature / Metric | Tactile (妙触) 🪄 | BetterTouchTool (BTT) | Jitouch (Legacy) | Swish |
+| :--- | :---: | :---: | :---: | :---: |
+| **Trackpad Gestures** | ✅ 120Hz ProMotion Multitouch | ✅ Complex Configuration | ⚠️ Broken on modern macOS | ⚠️ Pinch/Swipe only |
+| **Character & Letter Drawing** | ✅ Real-time ($V, W, C, T, etc.$) | ❌ Complex / Scripting only | ⚠️ Broken on Apple Silicon | ❌ Not Supported |
+| **Jitouch One-Fix Sliding** | ✅ Native Swift 6 + C | ⚠️ Difficult to emulate | ✅ Original pioneer | ❌ Not Supported |
+| **Magic Mouse Physical Middle Click** | ✅ Built-in Two-Finger Tap | ⚠️ Clunky / Heavy daemon | ❌ Not Supported | ❌ Not Supported |
+| **Active Memory Footprint** | ⚡ **&lt; 15 MB** | ❌ 150 MB – 450 MB | ⚠️ System Pref Pane (Dead) | ⚡ ~30 MB |
+| **Idle CPU Utilization** | ⚡ **0.0%** (Hardware debounced) | ❌ 1.5% – 5.0% frequent wakeups | ⚠️ Deprecated daemon | ⚡ &lt; 0.5% |
+| **Apple Silicon (M1/M2/M3/M4)** | ✅ 100% Native Universal 2 | ✅ Supported | ❌ Intel 32/64-bit legacy only | ✅ Supported |
+| **macOS Sonoma, Sequoia, Tahoe** | ✅ macOS 14.0+ modern API | ✅ Supported | ❌ Incompatible | ✅ Supported |
+| **Native Window Snapping** | ✅ Zero-lag AppKit HUD | ⚠️ Heavy window engine | ❌ Not Supported | ✅ Swipe-based |
+| **Pricing / License** | 🎁 **Free Core / $9.9 Lifetime Pro** | ❌ Subscription / ~$24+ | ⚠️ Abandoned | ❌ ~$16 Single-feature |
 
 ---
 
@@ -260,10 +280,20 @@ As macOS transitioned from Intel to Apple Silicon (M-series chips) and modernize
 
 ## 💡 FAQ & Support
 
-- **Q: Where is the menubar icon?**  
-  A: If "Hide Menu Bar Icon" is enabled, Tactile runs silently in the background. Simply double-click Tactile in Launchpad or Finder to bring up Settings.
+- **Q: Why choose Tactile over BetterTouchTool (BTT)?**  
+  A: While BetterTouchTool is feature-rich, it consumes **150MB–450MB RAM** and often causes background battery drain and heat on laptops. Tactile is engineered specifically for multitouch gestures in modern Swift 6 + driver-level C. It runs with **< 15MB RAM**, **0.0% idle CPU**, and delivers instant 120Hz ProMotion responsiveness with zero heap allocations in the touch path.
+
+- **Q: Which Mac Trackpads and Mice are supported?**  
+  A: Tactile natively supports all **MacBook Pro / MacBook Air built-in Force Touch Trackpads**, **Apple Magic Trackpad 2 & 3**, **Apple Magic Mouse 1 & 2**, and standard USB/Bluetooth optical and gaming mice.
+
+- **Q: How does Magic Mouse physical middle-click work?**  
+  A: Magic Mouse lacks a physical middle button or scroll wheel click. Tactile introduces an intelligent **Two-Finger Tap** on the mouse surface that emulates standard middle-click—allowing you to open links in background browser tabs or pan canvas in Figma, Blender, and CAD software with ease.
+
+- **Q: Where is the menubar icon if I hid it?**  
+  A: If "Hide Menu Bar Icon" is enabled, Tactile runs in stealth mode. Double-click the Tactile app icon in Finder or Launchpad to bring up Settings anytime.
+
 - **Q: Is offline activation supported?**  
-  A: Yes! Pro licenses use HMAC-SHA256 offline machine UUID validation. No internet connection is required.
+  A: Yes! All core gestures are permanently free. Pro licenses use HMAC-SHA256 offline machine UUID validation—no internet connection is ever required to validate or use your license.
 
 ---
 

@@ -39,19 +39,37 @@
 
 ## 📖 目录 (Table of Contents)
 
-1. [核心亮点与性能特性](#-核心亮点与性能特性)
-2. [全部功能矩阵 (Feature Matrix)](#-全部功能矩阵)
-3. [触控板手势详解 (Trackpad Gestures)](#-触控板手势详解)
-4. [字符与方向笔画绘制 (Character Drawing)](#-字符与方向笔画绘制)
-5. [妙控鼠标手势 (Magic Mouse Pro)](#-妙控鼠标手势-magic-mouse-pro)
-6. [省电模式与 CPU 极限优化](#-省电模式与-cpu-极限优化)
-7. [场景模式 (Scene Mode - Pro 专属)](#-场景模式-scene-mode---pro-专属)
-8. [分应用独立配置 (Per-App Profiles - Pro 专属)](#-分应用独立配置-per-app-profiles---pro-专属)
-9. [系统权限与运行状态 (Permissions & Health)](#-系统权限与运行状态)
-10. [下载与安装指引 (Download & Installation)](#-下载与安装指引-download--installation)
-11. [致敬与致谢 (Acknowledgments & Tribute)](#-致敬与致谢-acknowledgments--tribute)
-12. [开源与软件授权说明 (License & Notice)](#-开源与软件授权说明-license--notice)
-13. [常见问题与支持 (FAQ & Support)](#-常见问题与支持-faq--support)
+1. [🥊 核心对比 (Tactile vs BTT vs Jitouch)](#-核心对比tactile-vs-bettertouchtool-vs-jitouch-vs-swish)
+2. [核心亮点与性能特性](#-核心亮点与性能特性)
+3. [全部功能矩阵 (Feature Matrix)](#-全部功能矩阵)
+4. [触控板手势详解 (Trackpad Gestures)](#-触控板手势详解)
+5. [字符与方向笔画绘制 (Character Drawing)](#-字符与方向笔画绘制)
+6. [妙控鼠标手势 (Magic Mouse Pro)](#-妙控鼠标手势-magic-mouse-pro)
+7. [省电模式与 CPU 极限优化](#-省电模式与-cpu-极限优化)
+8. [场景模式 (Scene Mode - Pro 专属)](#-场景模式-scene-mode---pro-专属)
+9. [分应用独立配置 (Per-App Profiles - Pro 专属)](#-分应用独立配置-per-app-profiles---pro-专属)
+10. [系统权限与运行状态 (Permissions & Health)](#-系统权限与运行状态)
+11. [下载与安装指引 (Download & Installation)](#-下载与安装指引-download--installation)
+12. [致敬与致谢 (Acknowledgments & Tribute)](#-致敬与致谢-acknowledgments--tribute)
+13. [开源与软件授权说明 (License & Notice)](#-开源与软件授权说明-license--notice)
+14. [常见问题与支持 (FAQ & Support)](#-常见问题与支持-faq--support)
+
+---
+
+## 🥊 核心对比：Tactile vs. BetterTouchTool vs. Jitouch vs. Swish
+
+| 核心指标 / 功能特性 | Tactile (妙触) 🪄 | BetterTouchTool (BTT) | Jitouch (原版) | Swish |
+| :--- | :---: | :---: | :---: | :---: |
+| **触控板多指手势** | ✅ 120Hz ProMotion 极速响应 | ✅ 功能庞杂但配置极繁琐 | ⚠️ 在现代 macOS 上已失效 | ⚠️ 仅双指捏合与滑动 |
+| **字符轨迹与字母绘制** | ✅ 实时流光识别 ($V, W, C, T$ 等) | ❌ 仅支持极其复杂的脚本映射 | ⚠️ Apple Silicon 上无法运行 | ❌ 不支持 |
+| **Jitouch 经典单指驻留** | ✅ 原生 Swift 6 驱动级重构 | ⚠️ 模拟繁琐且时延偏高 | ✅ 早期经典交互 | ❌ 不支持 |
+| **妙控鼠标中键轻点** | ✅ 独创双指轻点物理中键 | ⚠️ 后台守护进程常驻沉重 | ❌ 不支持 | ❌ 不支持 |
+| **日常内存常驻** | ⚡ **&lt; 15 MB** (零堆分配热路径) | ❌ 150 MB – 450 MB (占用高) | ⚠️ 偏好设置面板架构 (已死) | ⚡ 约 30 MB |
+| **闲置后台 CPU** | ⚡ **严格 0.0%** (屏幕休眠即停) | ❌ 1.5% – 5.0% 频繁唤醒发热 | ⚠️ 废弃旧架构 | ⚡ &lt; 0.5% |
+| **Apple Silicon 原生** | ✅ 纯原生 Universal 2 (M1-M4) | ✅ 原生支持 | ❌ 仅 Intel 遗留代码 | ✅ 原生支持 |
+| **macOS 14+ 现代系统适配** | ✅ Sonoma / Sequoia / Tahoe 深度适配 | ✅ 支持 | ❌ 系统安全机制拦截 | ✅ 支持 |
+| **原生窗口智能吸附** | ✅ AppKit 毫秒级原生吸附 HUD | ⚠️ 窗口引擎庞大繁杂 | ❌ 不支持 | ✅ 仅触控滑动吸附 |
+| **价格与授权模式** | 🎁 **核心手势永久免费 / 买断制 Pro** | ❌ 较贵 / 周期订阅续费制 | ⚠️ 已停止维护 | ❌ 约 16 欧元单功能买断 |
 
 ---
 
