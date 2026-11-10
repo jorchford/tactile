@@ -4,9 +4,9 @@
 cask "tactile" do
   arch arm: "AppleSilicon", intel: "Intel"
 
-  version "0.21"
-  sha256 arm:   "42a1503e2a63c82ba844623086721e80324a0a81e31b489f448e0ab9f97e576a",
-         intel: "b8cf8718490fc7f93f40cced606ca0ece4822872cf7ca451c187c821a449e31d"
+  version "0.30"
+  sha256 arm:   "4279d52c93a3ef2ccb14aef79b01e893892a47522417827b1a07540ef1eec174",
+         intel: "ed32b3921341b9df1f14e392eb93780046fd639515ccd3e0c9739964c1cbbab5"
 
   url "https://github.com/jorchford/tactile/releases/download/v#{version}/Tactile-#{arch}.zip"
   name "Tactile"

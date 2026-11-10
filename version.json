@@ -1,12 +1,12 @@
 {
-  "version": "0.21",
-  "build": 3,
-  "title": "Tactile 0.21 焕新发布",
-  "releaseDate": "2026-11-07",
+  "version": "0.30",
+  "build": 4,
+  "title": "Tactile 0.30 深度性能与体验跃升",
+  "releaseDate": "2026-11-10",
   "minOSVersion": "14.0",
   "notes": {
-    "zh": "Tactile 0.21 重点更新：\n• 置顶截图贴图全面支持按住鼠标左键任意区域随心拖拽移动位置，首点即响应无需预先激活\n• 置顶截图贴图全面支持自如缩放：双指捏合缩放、双指/滚轮平滑缩放、右下角鼠标拖拉缩放、键盘 ⌘+/⌘-/⌘0 缩放、右键快捷菜单比例调节及 ⎋ Esc / 双击快速关闭\n• 新增出厂极简预设场景，支持一键将当前配置保存为极简场景\n• 快捷键录制全局按键吞咽隔离，100% 屏蔽其他外部应用干扰\n• 智能快捷键冲突探测预警（Carbon 全局热键与 macOS 系统快捷键）\n• 修复窗口靠右半屏吸附图标显示反向问题\n• 过滤系统后台守护进程，彻底根除 pid 186 权限异常警告与拖拽监测 CPU 负载\n• 深度根除 Swift 协程定时器堆积内存泄漏，剪贴板超大图片转入高速磁盘缓存，空闲时自动瘦身\n• 优化多指轻扫（3指/4指）灵敏度与指尖抬起瞬时检测\n• 支持 5 指自然手型检测、掌心误触过滤与双指绘字间距自适应微调",
-    "en": "Tactile 0.21 Highlights:\n• Pinned screenshot stickers can be dragged anywhere by holding the left mouse button, with instant first-click response\n• Pinned screenshots fully support scaling: pinch-to-zoom, scroll wheel zoom, corner drag resizing, ⌘+/⌘-/⌘0 zoom, right-click presets, and Esc / double-click close\n• Added built-in minimalist preset scene with one-click current settings save\n• Global key-swallowing during shortcut recording, shielding all background apps\n• Smart shortcut conflict detection (Carbon hotkeys & macOS system keys)\n• Fixed right half window snap icon orientation\n• Filtered system daemon processes, eliminating pid 186 task port errors and drag monitoring CPU overhead\n• Fixed deep Swift Concurrency timer memory leak, offloaded clipboard images to disk cache\n• Enhanced 3-finger and 4-finger swipe responsiveness and lift-off flick detection\n• Natural 5-finger hand perception, palm rejection, and auto-tuning character drawing spacing"
+    "zh": "Tactile 0.30 重点更新：\n• 原生 AppKit 打造全新交互式吸附与微小手势 HUD，彻底消除 NSHostingView 布局死循环与卡顿\n• 硬件级触控防重启优化：底层恢复设备运行状态比对复用，彻底根除热插拔与重载时的触控硬件重置风暴\n• 触控板多设备架构强化：精准区分 Magic Mouse 与 Trackpad 抬手帧，修复妙控鼠标双指轻点中键判定；补齐手掌防误触动态清空\n• 绘字与手势数据竞争彻底消除：触控线程与主线程候选词更新加锁同步，双指间距容差自适应校准生效\n• 消除 120Hz 触控看门狗调度风暴：采用极低开销标量时间戳看门狗定时器，CPU 占用大幅下降\n• 1000Hz 高回报率电竞鼠标划动优化：新增 4px 最小步长滤波，消除高频 Task 调度与 CoreAnimation 绘制负载\n• 睡眠唤醒防抖：合并高频唤醒信号，彻底杜绝短时间内并发 9+ 个重连任务导致的资源争抢\n• 内存释放体系优化：MainActor 优雅清理 UI 缓冲区后再异步释放 Malloc Zone\n• 截图涂鸦与设置图标绘制遵循现代 macOS 14+ 规范，全面采用线程安全 drawingHandler 绘制",
+    "en": "Tactile 0.30 Highlights:\n• Native AppKit interactive snap and micro-gesture HUD, completely eliminating NSHostingView layout loop jank\n• Hardware-level multitouch reload optimization: restores device status reuse, preventing hotplug restart storms\n• Multitouch multi-device architecture overhaul: preserves device kind on lift-off frames for Magic Mouse middle-click; resets PalmTracker state\n• Resolved character drawing data race: thread-safe candidate updates with unfairLock; respects calibrated spacing & tap speed\n• Eliminated 120Hz touch watchdog storm: single scalar-timestamp watchdog timer dramatically reduces idle/stream CPU usage\n• High-polling mouse optimization: 4px step filter prevents 1000Hz gaming mice from flooding Tasks and CoreAnimation draws\n• Sleep/wake reconnection debouncing: single-task sequence cancellation avoids redundant staggered reconnect storms\n• Refined QoS memory sweep: cleans UI buffers on MainActor before deferred Darwin malloc zone pressure relief\n• Modernized AppKit graphics contexts using thread-safe NSImage drawingHandler"
   },
   "downloads": {
     "gitee": {
@@ -15,7 +15,7 @@
       "arm64": "https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-AppleSilicon.zip",
       "intel": "https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-Intel.zip",
       "releasesUrl": "https://gitee.com/jorchford/tactile/releases",
-      "repoUrl": "https://git ee.com/jorchford/tactile"
+      "repoUrl": "https://gitee.com/jorchford/tactile"
     },
     "github": {
       "name": "GitHub 官方分发 (海外用户)",
