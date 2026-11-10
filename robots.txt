@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://jorchford.github.io/tactile/sitemap.xml
+Sitemap: https://app.needai.top/sitemap.xml
