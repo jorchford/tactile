@@ -1,12 +1,12 @@
 {
-  "version": "0.30",
-  "build": 4,
-  "title": "Tactile 0.30 深度性能与体验跃升",
-  "releaseDate": "2026-11-10",
+  "version": "0.40",
+  "build": 5,
+  "title": "Tactile 0.40 零泄露架构升级与极致省电优化",
+  "releaseDate": "2026-11-12",
   "minOSVersion": "14.0",
   "notes": {
-    "zh": "Tactile 0.30 重点更新：\n• 原生 AppKit 打造全新交互式吸附与微小手势 HUD，彻底消除 NSHostingView 布局死循环与卡顿\n• 硬件级触控防重启优化：底层恢复设备运行状态比对复用，彻底根除热插拔与重载时的触控硬件重置风暴\n• 触控板多设备架构强化：精准区分 Magic Mouse 与 Trackpad 抬手帧，修复妙控鼠标双指轻点中键判定；补齐手掌防误触动态清空\n• 绘字与手势数据竞争彻底消除：触控线程与主线程候选词更新加锁同步，双指间距容差自适应校准生效\n• 消除 120Hz 触控看门狗调度风暴：采用极低开销标量时间戳看门狗定时器，CPU 占用大幅下降\n• 1000Hz 高回报率电竞鼠标划动优化：新增 4px 最小步长滤波，消除高频 Task 调度与 CoreAnimation 绘制负载\n• 睡眠唤醒防抖：合并高频唤醒信号，彻底杜绝短时间内并发 9+ 个重连任务导致的资源争抢\n• 内存释放体系优化：MainActor 优雅清理 UI 缓冲区后再异步释放 Malloc Zone\n• 截图涂鸦与设置图标绘制遵循现代 macOS 14+ 规范，全面采用线程安全 drawingHandler 绘制",
-    "en": "Tactile 0.30 Highlights:\n• Native AppKit interactive snap and micro-gesture HUD, completely eliminating NSHostingView layout loop jank\n• Hardware-level multitouch reload optimization: restores device status reuse, preventing hotplug restart storms\n• Multitouch multi-device architecture overhaul: preserves device kind on lift-off frames for Magic Mouse middle-click; resets PalmTracker state\n• Resolved character drawing data race: thread-safe candidate updates with unfairLock; respects calibrated spacing & tap speed\n• Eliminated 120Hz touch watchdog storm: single scalar-timestamp watchdog timer dramatically reduces idle/stream CPU usage\n• High-polling mouse optimization: 4px step filter prevents 1000Hz gaming mice from flooding Tasks and CoreAnimation draws\n• Sleep/wake reconnection debouncing: single-task sequence cancellation avoids redundant staggered reconnect storms\n• Refined QoS memory sweep: cleans UI buffers on MainActor before deferred Darwin malloc zone pressure relief\n• Modernized AppKit graphics contexts using thread-safe NSImage drawingHandler"
+    "zh": "Tactile 0.40 重点更新：\n• 全工程 UI 与状态管理全面迁移至 macOS 14+ 原生 @Observable / @Bindable，消除高频状态变更引起的视图树重建开销\n• 零磁盘缓存与自动关闭网络客户端：彻底消除 Cache.db / httpstorages.sqlite 常驻文件句柄，授权与更新检查完成后自动断开 HTTPS 连接并严格冷却节流\n• 深度内存泄露与增长治理：HUD/轨迹/置顶贴图/剪贴板弹窗关闭即卸载视图并回收缓冲；截图复制采用单通道直接 PNG 编码，峰值内存与主线程耗时大幅下降\n• 剪贴板后台异步化与智能节流：大图缩略图及 JPEG 压缩移至后台线程，轮询随前后台动态降频并在系统休眠时自动暂停\n• 120Hz 触控与全局事件链路降耗：修复 FPS 与防误触时钟基准错配，空闲帧与非追踪拖拽零 C 调用直通，移除重复全局键盘监听并消除后台 QoS 调度抖动\n• 设置界面懒加载优化：长手势列表与运行应用选择器改用 LazyVStack、复用意图格式化器与成本受控图标缓存，并完成 Xcode 16/27 全链路零警告编译与 Apple 公证",
+    "en": "Tactile 0.40 Highlights:\n• Full codebase migration to modern macOS 14+ @Observable / @Bindable Observation framework, minimizing SwiftUI view rebuild overhead\n• Zero-disk-cache auto-closing network client: eliminates persistent Cache.db / httpstorages.sqlite file handles, closes HTTPS sockets immediately after checks, and enforces launch/integrity cooldowns\n• Deep memory leak & footprint fixes: tears down HUD, trail, pinned screenshot, and clipboard views on close; direct single-pass PNG encoding eliminates 30–50MB TIFF round-trip spikes\n• Off-main-thread clipboard compression & adaptive polling: processes large images on utility workers and throttles/pauses polling in background and sleep\n• 120Hz touch & EventTap CPU reduction: fixes FPS/click-suppression clock domain mismatch, removes duplicate global key monitors, and eliminates per-lift QoS churn\n• LazyVStack & formatter reuse across Settings views, shipped as Apple-notarized Universal 2, Apple Silicon, and Intel builds"
   },
   "downloads": {
     "gitee": {
