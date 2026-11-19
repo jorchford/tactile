@@ -1,12 +1,12 @@
 {
-  "version": "0.40",
-  "build": 5,
-  "title": "Tactile 0.40 零泄露架构升级与极致省电优化",
-  "releaseDate": "2026-11-12",
+  "version": "0.50",
+  "build": 6,
+  "title": "Tactile 0.50 多指手势灵敏度全面升级与现代 macOS 14+ 深度适配",
+  "releaseDate": "2026-11-20",
   "minOSVersion": "14.0",
   "notes": {
-    "zh": "Tactile 0.40 重点更新：\n• 全工程 UI 与状态管理全面迁移至 macOS 14+ 原生 @Observable / @Bindable，消除高频状态变更引起的视图树重建开销\n• 零磁盘缓存与自动关闭网络客户端：彻底消除 Cache.db / httpstorages.sqlite 常驻文件句柄，授权与更新检查完成后自动断开 HTTPS 连接并严格冷却节流\n• 深度内存泄露与增长治理：HUD/轨迹/置顶贴图/剪贴板弹窗关闭即卸载视图并回收缓冲；截图复制采用单通道直接 PNG 编码，峰值内存与主线程耗时大幅下降\n• 剪贴板后台异步化与智能节流：大图缩略图及 JPEG 压缩移至后台线程，轮询随前后台动态降频并在系统休眠时自动暂停\n• 120Hz 触控与全局事件链路降耗：修复 FPS 与防误触时钟基准错配，空闲帧与非追踪拖拽零 C 调用直通，移除重复全局键盘监听并消除后台 QoS 调度抖动\n• 设置界面懒加载优化：长手势列表与运行应用选择器改用 LazyVStack、复用意图格式化器与成本受控图标缓存，并完成 Xcode 16/27 全链路零警告编译与 Apple 公证",
-    "en": "Tactile 0.40 Highlights:\n• Full codebase migration to modern macOS 14+ @Observable / @Bindable Observation framework, minimizing SwiftUI view rebuild overhead\n• Zero-disk-cache auto-closing network client: eliminates persistent Cache.db / httpstorages.sqlite file handles, closes HTTPS sockets immediately after checks, and enforces launch/integrity cooldowns\n• Deep memory leak & footprint fixes: tears down HUD, trail, pinned screenshot, and clipboard views on close; direct single-pass PNG encoding eliminates 30–50MB TIFF round-trip spikes\n• Off-main-thread clipboard compression & adaptive polling: processes large images on utility workers and throttles/pauses polling in background and sleep\n• 120Hz touch & EventTap CPU reduction: fixes FPS/click-suppression clock domain mismatch, removes duplicate global key monitors, and eliminates per-lift QoS churn\n• LazyVStack & formatter reuse across Settings views, shipped as Apple-notarized Universal 2, Apple Silicon, and Intel builds"
+    "zh": "Tactile 0.50 重点更新：\n• 多指清扫手势（二指/三指/四指/五指左右与上下清扫）灵敏度全面提升：大幅降低直线轨迹严苛度要求，支持带弧度与斜向自然滑动，响应速度与识别率显著提升\n• 捏合手势（二指/三指/四指/五指捏合与张开）算法升级：增强中心点收敛与发散容差，微小手势即可顺畅触发\n• 触控板平滑度与抗抖动升级：优化多指触控轨迹追踪平滑窗口，彻底解决四指左右轻扫识别严苛与偶发漏识别问题\n• macOS 14+ 现代 API 深度合规：彻底移除废弃的 activate(ignoringOtherApps:)，全链路采用 macOS 14/15 官方标准 NSApp.activate() 激活，零控制台警告与更高稳定性\n• 包含 Apple Silicon (arm64) 与 Intel (x86_64) 原生独立版及 Universal 2 通用二进制，均通过 Developer ID 权威签名",
+    "en": "Tactile 0.50 Highlights:\n• Multitouch swipe sensitivity overhaul: comprehensive sensitivity boost for 2, 3, 4, and 5-finger directional swipes with relaxed trajectory linearity tolerance, making natural curved swipes effortlessly recognized\n• Pinch gesture algorithm upgrade: enhanced convergence/divergence detection for 2, 3, 4, and 5-finger pinch in/out gestures with subtle movement triggering\n• Dynamic gesture tracking smoothing: optimized multitouch smoothing window to eliminate missed or strict 4-finger swipe triggers\n• Modern macOS 14+ API compliance: replaced legacy activate(ignoringOtherApps:) with modern NSApp.activate(), eliminating system deprecation warnings\n• Built & notarized with Developer ID as Universal 2, Apple Silicon, and Intel standalone packages"
   },
   "downloads": {
     "gitee": {
