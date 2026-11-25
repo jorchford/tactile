@@ -1,12 +1,12 @@
 {
-  "version": "0.50",
-  "build": 6,
-  "title": "Tactile 0.50 多指手势灵敏度全面升级与现代 macOS 14+ 深度适配",
-  "releaseDate": "2026-11-20",
+  "version": "0.60",
+  "build": 7,
+  "title": "Tactile 0.60 全链路并发安全加固、菜单栏剪贴板历史与字符/轻点手势精调",
+  "releaseDate": "2026-11-26",
   "minOSVersion": "14.0",
   "notes": {
-    "zh": "Tactile 0.50 重点更新：\n• 多指清扫手势（二指/三指/四指/五指左右与上下清扫）灵敏度全面提升：大幅降低直线轨迹严苛度要求，支持带弧度与斜向自然滑动，响应速度与识别率显著提升\n• 捏合手势（二指/三指/四指/五指捏合与张开）算法升级：增强中心点收敛与发散容差，微小手势即可顺畅触发\n• 触控板平滑度与抗抖动升级：优化多指触控轨迹追踪平滑窗口，彻底解决四指左右轻扫识别严苛与偶发漏识别问题\n• macOS 14+ 现代 API 深度合规：彻底移除废弃的 activate(ignoringOtherApps:)，全链路采用 macOS 14/15 官方标准 NSApp.activate() 激活，零控制台警告与更高稳定性\n• 包含 Apple Silicon (arm64) 与 Intel (x86_64) 原生独立版及 Universal 2 通用二进制，均通过 Developer ID 权威签名",
-    "en": "Tactile 0.50 Highlights:\n• Multitouch swipe sensitivity overhaul: comprehensive sensitivity boost for 2, 3, 4, and 5-finger directional swipes with relaxed trajectory linearity tolerance, making natural curved swipes effortlessly recognized\n• Pinch gesture algorithm upgrade: enhanced convergence/divergence detection for 2, 3, 4, and 5-finger pinch in/out gestures with subtle movement triggering\n• Dynamic gesture tracking smoothing: optimized multitouch smoothing window to eliminate missed or strict 4-finger swipe triggers\n• Modern macOS 14+ API compliance: replaced legacy activate(ignoringOtherApps:) with modern NSApp.activate(), eliminating system deprecation warnings\n• Built & notarized with Developer ID as Universal 2, Apple Silicon, and Intel standalone packages"
+    "zh": "Tactile 0.60 重点更新：\n• 核心引擎并发与稳定性深度加固：全面迁移至 macOS 14+ OSAllocatedUnfairLock，修复多点触控停启死锁、休眠唤醒时间戳回退、多触控板掌压串扰及跨线程数据竞争等 13 项核心缺陷\n• 菜单栏增强与剪贴板历史子菜单：新增菜单栏快捷功能开关、最近 12 条剪贴板历史（含图片缩略图与一键直接粘贴）以及同步快捷键的悬浮菜单 / 截屏入口\n• 字符绘制与单指驻留轻点人体工学调优：防止双指捏合误判与微漂移中断字符笔触，大幅提升弯指与触控板下沿拇指轻点的识别率\n• 120Hz 物理仿真测试体系：新增 82 项全链路手势仿真用例并全部通过\n• 包含 Apple Silicon (arm64)、Intel (x86_64) 原生独立版及 Universal 2 通用二进制，均通过 Developer ID 权威签名",
+    "en": "Tactile 0.60 Highlights:\n• Core engine concurrency & stability hardening: migrated locks to OSAllocatedUnfairLock for Swift 6 strict safety, fixing 13 core issues including stop deadlock, sleep/wake timestamp rollback, multi-trackpad palm isolation, and cross-thread data races\n• Menu bar & Clipboard History submenu: added quick enhancement toggles, 12-item Clipboard History with thumbnail previews and direct paste, plus shortcut-synced Floating Menu and Screenshot launchers\n• Character drawing & One-Fix Tap ergonomics: prevented premature stroke cancellation from pinch-zoom false positives and improved curved-finger & bottom-edge thumb tap sensitivity\n• 120Hz physics gesture simulation suite: 82/82 end-to-end tests passing across Trackpad, Character/Stroke, Magic Mouse, and Robustness\n• Signed with Developer ID as Universal 2, Apple Silicon, and Intel standalone packages"
   },
   "downloads": {
     "gitee": {

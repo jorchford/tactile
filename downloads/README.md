@@ -2,9 +2,9 @@
 
 欢迎访问 Tactile 官方预编译独立安装包分发目录。本项目针对不同架构提供经过严格构建与 Apple Developer ID 签名认证的独立应用压缩包（解压即用）。
 
-> 🚀 **当前最新正式版本**: **`v0.50`** (Build 6)  
-> 🏷️ **GitHub Release 页面**: [Tactile v0.50 Releases (海外)](https://github.com/jorchford/tactile/releases/tag/v0.50)  
-> 🇨🇳 **Gitee 码云发行标签页**: [Tactile v0.50 Gitee Tags (国内)](https://gitee.com/jorchford/tactile/tree/v0.50)  
+> 🚀 **当前最新正式版本**: **`v0.60`** (Build 7)  
+> 🏷️ **GitHub Release 页面**: [Tactile v0.60 Releases (海外)](https://github.com/jorchford/tactile/releases/tag/v0.60)  
+> 🇨🇳 **Gitee 码云发行标签页**: [Tactile v0.60 Gitee Tags (国内)](https://gitee.com/jorchford/tactile/tree/v0.60)  
 > 🍺 **Homebrew Cask 一键安装**: `brew install --cask jorchford/tactile/tactile`
 
 ---
@@ -22,27 +22,27 @@
 
 ---
 
-## 🏷️ v0.50 独立版本归档包 (Release v0.50 Archive)
+## 🏷️ v0.60 独立版本归档包 (Release v0.60 Archive)
 
 | 文件名 | 适用平台 | 版本号 | GitHub Release 下载 | Gitee 国内极速下载 |
 | :--- | :--- | :--- | :--- | :--- |
-| **`Tactile-Universal.zip`** | Universal 2 (Intel + Apple Silicon) | v0.50 (Build 6) | [GitHub 下载](https://github.com/jorchford/tactile/releases/download/v0.50/Tactile-Universal.zip) | [⚡ Gitee 下载](https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-Universal.zip) |
-| **`Tactile-AppleSilicon.zip`** | Apple Silicon (arm64) | v0.50 (Build 6) | [GitHub 下载](https://github.com/jorchford/tactile/releases/download/v0.50/Tactile-AppleSilicon.zip) | [⚡ Gitee 下载](https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-AppleSilicon.zip) |
-| **`Tactile-Intel.zip`** | Intel (x86_64) | v0.50 (Build 6) | [GitHub 下载](https://github.com/jorchford/tactile/releases/download/v0.50/Tactile-Intel.zip) | [⚡ Gitee 下载](https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-Intel.zip) |
+| **`Tactile-Universal.zip`** | Universal 2 (Intel + Apple Silicon) | v0.60 (Build 7) | [GitHub 下载](https://github.com/jorchford/tactile/releases/download/v0.60/Tactile-Universal.zip) | [⚡ Gitee 下载](https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-Universal.zip) |
+| **`Tactile-AppleSilicon.zip`** | Apple Silicon (arm64) | v0.60 (Build 7) | [GitHub 下载](https://github.com/jorchford/tactile/releases/download/v0.60/Tactile-AppleSilicon.zip) | [⚡ Gitee 下载](https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-AppleSilicon.zip) |
+| **`Tactile-Intel.zip`** | Intel (x86_64) | v0.60 (Build 7) | [GitHub 下载](https://github.com/jorchford/tactile/releases/download/v0.60/Tactile-Intel.zip) | [⚡ Gitee 下载](https://gitee.com/jorchford/tactile/raw/master/downloads/Tactile-Intel.zip) |
 
 ---
 
-## 🔒 校验哈希 (SHA-256 Checksums - v0.50)
+## 🔒 校验哈希 (SHA-256 Checksums - v0.60)
 
 如需对下载的文件进行完整性与防篡改验证，可在终端中执行 `shasum -a 256 <文件名>` 并核对以下哈希：
 
 ```text
-8ef1c1de5b3610ac894acf83c82479f904a1e4219345467d8682d06c83c76e20  Tactile-AppleSilicon.zip
+7f5fe606931fb9b8266db080e16a79c157304d5b31b00a5458311e81fd4aa09e  Tactile-AppleSilicon.zip
 
-e9747c4fcce84ee21d4c056df410412da897de58a87dffc0bf445e1b8adc33d9  Tactile-Intel.zip
+63365961a89b299950a4c4bd0cdb387d401b9ca9246008e83c579f3da9dc654f  Tactile-Intel.zip
 
-4e4cf07153db578a8983a4ec3e05eff504282ba1ea6e559b013e216c2cab1376  Tactile-Universal.zip
-4e4cf07153db578a8983a4ec3e05eff504282ba1ea6e559b013e216c2cab1376  Tactile.app.zip
+5d1db75d65a82004d5ebab2b81c41b8d7b95385ec847af34b4e42f7d37589c60  Tactile-Universal.zip
+5d1db75d65a82004d5ebab2b81c41b8d7b95385ec847af34b4e42f7d37589c60  Tactile.app.zip
 ```
 
 ---
