@@ -157,7 +157,7 @@
 ## ✍️ Character & Stroke Drawing
 
 <p align="center">
-  <img src="images/03_live_hud_character.png" alt="Character Drawing & HUD" width="90%">
+  <img src="images/02_character-2.png" alt="Character & Stroke Drawing" width="90%">
 </p>
 
 - **Two-Finger / Single-Finger Trackpad Drawing**: Draw letters directly on your trackpad.
@@ -170,7 +170,7 @@
 ## 🖱 Magic Mouse Pro Gestures
 
 <p align="center">
-  <img src="images/02_multitouch_desktop.png" alt="Desktop Multitouch" width="90%">
+  <img src="images/02Mouse.png" alt="Magic Mouse Pro Gestures" width="90%">
 </p>
 
 - **Middle Finger Fixed + Index Tap**: Near tap switches to previous tab; far tap switches to next tab.
@@ -183,7 +183,7 @@
 ## 🔋 Power Saving & CPU Optimization
 
 <p align="center">
-  <img src="images/04_gesture_halo_toast.png" alt="Gesture Halo & Toast" width="90%">
+  <img src="images/06-extends.png" alt="System Extensions & Power Optimization" width="90%">
 </p>
 
 - **Screen Sleep Suspension**: Hooks into `NSWorkspace.screensDidSleepNotification` to put driver polling loops to sleep when displays power off, awakening instantaneously upon wake.
@@ -194,11 +194,19 @@
 
 ---
 
-## 🎛 Scene Presets (Pro)
+## 🔬 120Hz Live Touch Diagnostics & Calibration
 
 <p align="center">
-  <img src="images/05_scene_presets.png" alt="Scene Presets" width="90%">
+  <img src="images/07-live-test.png" alt="Trackpad Live Diagnostics & Calibration" width="90%">
 </p>
+
+- **120Hz Hardware Touch Capture**: Panoramic visualizer tracking real-time finger contacts, motion paths, and microsecond latencies.
+- **Custom Sensitivity Profiles**: Dial in sliding distance thresholds, tap detection latencies, and straightness tolerances.
+- **Action Interception Protection**: Foreground diagnostic mode safely intercepts OS actions (window close, workspace change) so you can calibrate freely.
+
+---
+
+## 🎛 Scene Presets (Pro)
 
 1. **Daily General**: Tailored for Safari, browser navigation, tab cycling, and daily window arrangements.
 2. **Office Productivity**: Optimised for Pages, Word, Numbers, and mail workflow with rapid half-screen snapping and text shortcuts.

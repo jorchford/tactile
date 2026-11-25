@@ -155,7 +155,7 @@
 ## ✍️ 字符与方向笔画绘制
 
 <p align="center">
-  <img src="images/03_live_hud_character.png" alt="Character Drawing & Live HUD" width="90%">
+  <img src="images/02_character-2.png" alt="字符与方向笔画绘制" width="90%">
 </p>
 
 ### 1. 触发方式与按键自定义
@@ -184,7 +184,7 @@
 ## 🖱 妙控鼠标手势 (Magic Mouse Pro)
 
 <p align="center">
-  <img src="images/02_multitouch_desktop.png" alt="Desktop Multitouch" width="90%">
+  <img src="images/02Mouse.png" alt="妙控鼠标手势增强" width="90%">
 </p>
 
 - **中指固定 + 食指轻点 (Near/Far Tap)**：近点切换上一标签，远点切换下一标签。
@@ -197,7 +197,7 @@
 ## 🔋 省电模式与 CPU 极限优化
 
 <p align="center">
-  <img src="images/04_gesture_halo_toast.png" alt="Gesture Halo & Toast" width="90%">
+  <img src="images/06-extends.png" alt="系统扩展工具箱与极速优化" width="90%">
 </p>
 
 - **屏幕休眠深度感知**：系统屏幕熄灭时即刻挂起触控监听线程，亮屏毫秒级恢复，闲置 0.0% CPU 占用。
@@ -207,11 +207,19 @@
 
 ---
 
-## 🎛 场景模式 (Scene Mode - Pro 专属)
+## 🔬 触控板实时调试与校准 (Live Diagnostics & Calibration)
 
 <p align="center">
-  <img src="images/05_scene_presets.png" alt="Scene Presets" width="90%">
+  <img src="images/07-live-test.png" alt="120Hz 实时交互调试与校准" width="90%">
 </p>
+
+- **120Hz 硬件物理触摸捕捉**：全景仿真视窗实时可视化手指物理接触点、滑动流动轨迹与毫秒级时序。
+- **专属指法档案与灵敏度调校**：针对个人操作习惯微调滑动距离阈值、轻点判定时间与字符识别直线度。
+- **系统动作安全拦截保护**：调试窗口激活期间自动拦截真实系统操作（如关闭窗口、切换桌面等），调校过程安全无忧。
+
+---
+
+## 🎛 场景模式 (Scene Mode - Pro 专属)
 
 1. **日常通用 (Daily General)**：针对 Safari、网页查阅、标签切换与日常桌面交互深度优化。
 2. **高效办公 (Office Productivity)**：针对 Word、Pages、Excel、Numbers 与邮件通讯优化。

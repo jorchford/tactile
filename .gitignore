@@ -4,3 +4,7 @@
 
 .claude/
 .mcp.json
+.agents/
+
+AGENTS.md
+GEMINI.md
